@@ -89,7 +89,7 @@ export default function FeaturedWorkSection() {
                 </svg>
               </div>
               <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 group-hover:text-cosmic transition-colors duration-300">
-                Data-Driven Design
+                Data-driven design
               </h3>
               <p className="text-white/80 text-sm sm:text-base leading-relaxed">
                 We start with your business goals, not our design portfolio. Every decision is backed by data to ensure it drives results.
@@ -106,7 +106,7 @@ export default function FeaturedWorkSection() {
                 </svg>
               </div>
               <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 group-hover:text-andromeda transition-colors duration-300">
-                AI-Powered Growth
+                AI-powered growth
               </h3>
               <p className="text-white/80 text-sm sm:text-base leading-relaxed">
                 We integrate intelligent automation to not just attract leads, but to qualify and nurture them, turning your website into a proactive sales channel.
@@ -123,7 +123,7 @@ export default function FeaturedWorkSection() {
                 </svg>
               </div>
               <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 group-hover:text-orion transition-colors duration-300">
-                A True Partnership
+                A true partnership
               </h3>
               <p className="text-white/80 text-sm sm:text-base leading-relaxed">
                 We operate as an extension of your team. You get a single point of contact and a transparent process from start to finish.
@@ -139,7 +139,7 @@ export default function FeaturedWorkSection() {
             variant="primary" 
             size="md"
           >
-            See Our Process
+            See our process
           </Button>
         </div>
       </div>
