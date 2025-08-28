@@ -118,11 +118,19 @@ export default function HeroSection() {
         
         {/* Main Headline with Enhanced Glow */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-lightGrey mb-6 sm:mb-8 md:mb-10 leading-tight tracking-tight">
-          A website that works{' '}
+          We Build{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cosmic via-andromeda to-cosmic drop-shadow-lg">
-            as hard as you do
+            Growth Engines
           </span>
+          <br />
+          Not Just Websites
         </h1>
+        
+        {/* Enhanced Subtitle with SEO Keywords */}
+        <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 sm:mb-10 max-w-4xl mx-auto leading-relaxed">
+          Transform your business with our expert web development, growth marketing, and conversion optimization services. 
+          We create high-performance websites that drive leads, sales, and measurable business growth.
+        </p>
         
         {/* Enhanced Achievement Badges - Small, Cool & Aesthetic */}
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-10">
@@ -144,7 +152,7 @@ export default function HeroSection() {
             variant="primary" 
             size="lg"
           >
-            Start now
+            Start Your Growth Journey
           </Button>
         </div>
 

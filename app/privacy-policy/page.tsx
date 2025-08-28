@@ -2,6 +2,38 @@ import Header from '../components/layout/Header'
 import Footer from '../components/sections/Footer'
 import AnimationProvider from '../components/providers/AnimationProvider'
 import GDPRConsent from '../components/ui/GDPRConsent'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy - GrowthWebs Agency | Data Protection & GDPR Compliance',
+  description: 'Learn how GrowthWebs Agency protects your privacy and personal data. Our comprehensive privacy policy covers GDPR compliance, data collection, usage, and your rights.',
+  keywords: [
+    'privacy policy',
+    'GDPR compliance',
+    'data protection',
+    'personal data',
+    'privacy rights',
+    'data collection',
+    'web agency privacy',
+    'UK privacy law',
+    'data processing',
+    'consent management'
+  ],
+  openGraph: {
+    title: 'Privacy Policy - GrowthWebs Agency',
+    description: 'Learn how GrowthWebs Agency protects your privacy and personal data with GDPR compliance.',
+    type: 'website',
+    locale: 'en_GB',
+    siteName: 'GrowthWebs Agency',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://growthwebs.com/privacy-policy',
+  },
+}
 
 export default function PrivacyPolicy() {
   return (

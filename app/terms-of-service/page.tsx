@@ -2,6 +2,38 @@ import Header from '../components/layout/Header'
 import Footer from '../components/sections/Footer'
 import AnimationProvider from '../components/providers/AnimationProvider'
 import GDPRConsent from '../components/ui/GDPRConsent'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Terms of Service - GrowthWebs Agency | Web Development & Digital Marketing Terms',
+  description: 'Read GrowthWebs Agency terms of service. Learn about our web development, digital marketing, and consulting services terms, conditions, and policies.',
+  keywords: [
+    'terms of service',
+    'web development terms',
+    'digital marketing terms',
+    'agency terms',
+    'service agreement',
+    'web design terms',
+    'consulting terms',
+    'UK web agency',
+    'legal terms',
+    'service conditions'
+  ],
+  openGraph: {
+    title: 'Terms of Service - GrowthWebs Agency',
+    description: 'Read GrowthWebs Agency terms of service for web development and digital marketing services.',
+    type: 'website',
+    locale: 'en_GB',
+    siteName: 'GrowthWebs Agency',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+  alternates: {
+    canonical: 'https://growthwebs.com/terms-of-service',
+  },
+}
 
 export default function TermsOfService() {
   return (

@@ -145,27 +145,27 @@ export default function ApproachSection() {
         <div className="absolute bottom-1/8 right-1/8 w-1 h-1 bg-andromeda/20 rounded-full animate-ping" style={{animationDelay: '19s'}}></div>
       </div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col pt-16 sm:pt-20 md:pt-24 lg:pt-28">
-        {/* Section Header - Enhanced spacing and better proportions */}
-        <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-14 flex-shrink-0">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-lightGrey mb-6 sm:mb-8 md:mb-10 leading-tight tracking-tight">
-            The Agency{' '}
+      {/* Content Section with SEO-Optimized Headings */}
+      <div className="relative z-10 pt-20 pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto text-center mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 sm:mb-8 leading-tight">
+            Our{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cosmic via-andromeda to-cosmic">
-              Dilemma
+              Growth-First Approach
             </span>
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl text-lightGrey/80 max-w-4xl sm:max-w-5xl mx-auto font-light leading-relaxed">
-            You're stuck between designers who don't understand business and marketers who don't understand design. 
-            The result? A beautiful website that goes nowhere, or a functional one that fails to inspire.
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            We don't just build websites – we create digital growth engines that drive measurable business results. 
+            Our proven methodology combines strategic thinking, technical excellence, and data-driven optimization.
           </p>
         </div>
 
-        {/* Animated Dashboard Scene - Better spacing and positioning */}
+        {/* Interactive Chat Interface */}
         <div 
           ref={sceneRef}
-          className="relative mx-auto max-w-4xl sm:max-w-5xl lg:max-w-6xl flex items-center justify-center"
+          className="relative flex items-center justify-center min-h-[600px] sm:min-h-[700px] md:min-h-[800px] lg:min-h-[900px] xl:min-h-[1000px]"
           style={{
-            transform: `perspective(1000px) rotateY(${(mousePosition.x - 0.5) * 5}deg) rotateX(${(mousePosition.y - 0.5) * 5}deg)`,
+            transform: `perspective(1000px) rotateX(${(mousePosition.y - 0.5) * 5}deg) rotateY(${(mousePosition.x - 0.5) * 5}deg)`,
             transition: 'transform 0.1s ease-out'
           }}
         >
