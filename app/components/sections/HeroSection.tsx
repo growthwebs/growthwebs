@@ -118,12 +118,12 @@ export default function HeroSection() {
         
         {/* Main Headline with Enhanced Glow */}
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-lightGrey mb-6 sm:mb-8 md:mb-10 leading-tight tracking-tight">
-          We Build{' '}
+          We build{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cosmic via-andromeda to-cosmic drop-shadow-lg">
-            Growth Engines
+            growth engines
           </span>
           <br />
-          Not Just Websites
+          not just websites
         </h1>
         
         {/* Enhanced Subtitle with SEO Keywords */}
@@ -135,13 +135,13 @@ export default function HeroSection() {
         {/* Enhanced Achievement Badges - Small, Cool & Aesthetic */}
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-10">
           <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90">
-            #1 IN PERFORMANCE BENCHMARKS
+            #1 in performance benchmarks
           </span>
           <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90">
-            #1 IN COMPETITIVE BAKE-OFFS
+            #1 in competitive bake-offs
           </span>
           <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90">
-            #1 RANKING ON G2
+            #1 ranking on G2
           </span>
         </div>
         
@@ -152,7 +152,7 @@ export default function HeroSection() {
             variant="primary" 
             size="lg"
           >
-            Start Your Growth Journey
+            Start your growth journey
           </Button>
         </div>
 

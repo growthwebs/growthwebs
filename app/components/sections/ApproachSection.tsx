@@ -151,7 +151,7 @@ export default function ApproachSection() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 sm:mb-8 leading-tight">
             Our{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cosmic via-andromeda to-cosmic">
-              Growth-First Approach
+              growth-first approach
             </span>
           </h2>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed">

@@ -134,7 +134,7 @@ export default function PrivacyPolicy() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Data Sharing
+                  Data sharing
                 </h2>
                 <p className="leading-relaxed">
                   We do not sell your personal information. We may share it only with:
@@ -147,7 +147,7 @@ export default function PrivacyPolicy() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Data Security
+                  Data security
                 </h2>
                 <p className="leading-relaxed">
                   We protect your information using industry-standard security measures. However, no method of transmission over the internet is 100% secure.
@@ -156,7 +156,7 @@ export default function PrivacyPolicy() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Data Retention
+                  Data retention
                 </h2>
                 <p className="leading-relaxed">
                   We keep your information only as long as necessary to provide our services or as required by law.
@@ -165,7 +165,7 @@ export default function PrivacyPolicy() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  International Transfers
+                  International transfers
                 </h2>
                 <p className="leading-relaxed">
                   Your information is processed within the European Economic Area (EEA). If we need to transfer data outside the EEA, we ensure adequate protection measures are in place.
@@ -177,25 +177,21 @@ export default function PrivacyPolicy() {
                   Cookies
                 </h2>
                 <p className="leading-relaxed">
-                  We use cookies to improve your experience on our website. You can control cookie settings in your browser. See our{' '}
-                  <a href="/cookie-policy" className="text-blue-400 hover:text-blue-300 underline">
-                    Cookie Policy
-                  </a>{' '}
-                  for more details.
+                  We use cookies to improve your experience on our website. You can control cookie settings in your browser. See our <a href="/cookie-policy" className="text-blue-400 hover:text-blue-300 underline">Cookie Policy</a> for more details.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Contact Us
+                  Contact us
                 </h2>
                 <p className="leading-relaxed">
                   If you have questions about this privacy policy or want to exercise your rights, please contact us:
                 </p>
                 <div className="mt-3 p-4 bg-gray-800 rounded-lg">
                   <p className="text-white">
-                    <strong>Email:</strong> privacy@growthwebs.com<br />
-                    <strong>Address:</strong> [Your Company Address]<br />
+                    <strong>Email:</strong> privacy@growthwebs.com<br/>
+                    <strong>Address:</strong> [Your Company Address]<br/>
                     <strong>Data Protection Officer:</strong> [DPO Name if applicable]
                   </p>
                 </div>
@@ -203,7 +199,7 @@ export default function PrivacyPolicy() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Changes to This Policy
+                  Changes to this policy
                 </h2>
                 <p className="leading-relaxed">
                   We may update this privacy policy from time to time. We will notify you of any changes by posting the new policy on this page.

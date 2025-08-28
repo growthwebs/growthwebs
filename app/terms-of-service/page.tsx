@@ -130,7 +130,7 @@ export default function TermsOfService() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Intellectual Property
+                  Intellectual property
                 </h2>
                 <div className="space-y-3">
                   <p className="leading-relaxed">
@@ -147,7 +147,7 @@ export default function TermsOfService() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Privacy and Data
+                  Privacy and data
                 </h2>
                 <p className="leading-relaxed">
                   We take your privacy seriously. How we handle your information is explained in our{' '}
@@ -160,7 +160,7 @@ export default function TermsOfService() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Limitation of Liability
+                  Limitation of liability
                 </h2>
                 <p className="leading-relaxed">
                   We work hard to provide excellent services, but we cannot guarantee specific business results. Our liability is limited to the amount you paid for our services.
@@ -169,7 +169,7 @@ export default function TermsOfService() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Disputes and Resolution
+                  Disputes and resolution
                 </h2>
                 <p className="leading-relaxed">
                   If you have concerns about our services, please contact us first. We want to resolve any issues quickly and fairly. If we cannot resolve a dispute, we may use mediation or other dispute resolution methods.
@@ -178,7 +178,7 @@ export default function TermsOfService() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Changes to These Terms
+                  Changes to these terms
                 </h2>
                 <p className="leading-relaxed">
                   We may update these terms from time to time. We will notify you of any important changes by posting them on this page. Your continued use of our website means you accept the updated terms.
@@ -187,7 +187,7 @@ export default function TermsOfService() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Contact Information
+                  Contact information
                 </h2>
                 <p className="leading-relaxed">
                   If you have questions about these terms, please contact us:
@@ -203,7 +203,7 @@ export default function TermsOfService() {
 
               <section>
                 <h2 className="text-2xl font-semibold text-white mb-4">
-                  Governing Law
+                  Governing law
                 </h2>
                 <p className="leading-relaxed">
                   These terms are governed by the laws of [Your Country]. Any disputes will be resolved in the courts of [Your Country].

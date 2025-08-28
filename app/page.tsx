@@ -10,7 +10,7 @@ import CookiePreferencesManager from './components/ui/CookiePreferencesManager'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'GrowthWebs Agency - Premium Web Development & Growth Marketing | London',
+  title: 'GrowthWebs Agency - Premium web development & growth marketing | London',
   description: 'Transform your business with GrowthWebs. We build high-converting websites, implement growth marketing strategies, and create digital experiences that drive results. Expert web development, SEO, and conversion optimization.',
   keywords: [
     'web development agency',
