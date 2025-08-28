@@ -103,18 +103,7 @@ export default function HeroSection() {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-[320px] xs:max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8">
-        {/* Enhanced Snowflake Icon with Glow */}
-        <div className="mb-4 xs:mb-6 sm:mb-8 md:mb-10">
-          <div className="inline-flex items-center justify-center w-16 h-16 xs:w-20 xs:h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-cosmic/20 backdrop-blur-sm rounded-xl xs:rounded-2xl sm:rounded-3xl border border-cosmic/40 shadow-lg shadow-cosmic/30">
-            <Image 
-              src="/images/svg/snowflake-icon.svg" 
-              alt="Snowflake Icon" 
-              width={32} 
-              height={32}
-              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 text-cosmic drop-shadow-lg"
-            />
-          </div>
-        </div>
+
         
         {/* Main Headline with Enhanced Glow */}
         <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light text-lightGrey mb-3 xs:mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-tight tracking-tight">
@@ -146,35 +135,7 @@ export default function HeroSection() {
           </Button>
         </div>
 
-        {/* Service Keywords Section - Glass Finish & Rounded Edges */}
-        <div className="mb-8 xs:mb-10 sm:mb-12 md:mb-14">
-          <div className="flex flex-wrap items-center justify-center gap-3 xs:gap-4 sm:gap-5 md:gap-6 text-xs xs:text-sm sm:text-base text-white/90 font-medium">
-            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
-              Web Design
-            </span>
-            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
-              Frontend Development
-            </span>
-            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
-              Backend Development
-            </span>
-            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
-              Technical SEO
-            </span>
-            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
-              Strategic SEO
-            </span>
-            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
-              Conversion Optimization
-            </span>
-            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
-              Performance Optimization
-            </span>
-            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
-              UX/UI Design
-            </span>
-          </div>
-        </div>
+
 
         {/* Transparent Logos Carousel - Just the logos visible */}
         <div className="relative mx-auto max-w-[300px] xs:max-w-5xl sm:max-w-6xl">
