@@ -128,9 +128,9 @@ export default function HeroSection() {
         </h1>
         
         {/* Enhanced Subtitle with SEO Keywords */}
-        <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 xs:mb-6 sm:mb-8 md:mb-10 max-w-[280px] xs:max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
-          Transform your business with our expert web development, growth marketing, and conversion optimization services. 
-          We create high-performance websites that drive leads, sales, and measurable business growth.
+        <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 xs:mb-6 sm:mb-8 md:mb-10 max-w-[280px] xs:max-w-2xl sm:max-w-3xl mx-auto leading-relaxed">
+          Expert web development, growth marketing & conversion optimization. 
+          High-performance websites that drive measurable business growth.
         </p>
         
         {/* Enhanced Achievement Badges - Small, Cool & Aesthetic */}
