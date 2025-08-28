@@ -127,34 +127,64 @@ export default function HeroSection() {
           not just websites
         </h1>
         
-        {/* Enhanced Subtitle with SEO Keywords */}
+        {/* Enhanced Subtitle with Comprehensive SEO Keywords */}
         <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 xs:mb-6 sm:mb-8 md:mb-10 max-w-[280px] xs:max-w-2xl sm:max-w-3xl mx-auto leading-relaxed">
-          Expert web development, growth marketing & conversion optimization. 
-          High-performance websites that drive measurable business growth.
+          Expert web design, development & strategic SEO. 
+          Conversion optimization & high-performance websites that drive growth.
         </p>
         
-        {/* Enhanced Achievement Badges - Small, Cool & Aesthetic */}
+        {/* Enhanced Achievement Badges - SEO & Performance Focused */}
         <div className="flex flex-wrap items-center justify-center gap-1.5 xs:gap-2 sm:gap-3 md:gap-4 mb-4 xs:mb-6 sm:mb-8 md:mb-10">
           <span className="px-1.5 py-1 xs:px-2 xs:py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs font-medium tracking-wide text-white/90 whitespace-nowrap">
-            #1 in performance benchmarks
+            #1 in technical SEO
           </span>
           <span className="px-1.5 py-1 xs:px-2 xs:py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs font-medium tracking-wide text-white/90 whitespace-nowrap">
-            #1 in competitive bake-offs
+            #1 in conversion rates
           </span>
           <span className="px-1.5 py-1 xs:px-2 xs:py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs font-medium tracking-wide text-white/90 whitespace-nowrap">
-            #1 ranking on G2
+            #1 in web design
           </span>
         </div>
         
-        {/* Enhanced CTA Button - Double Size for Hero Section */}
-        <div className="flex justify-center mb-8 xs:mb-10 sm:mb-12 md:mb-14">
+        {/* Enhanced CTA Button - SEO Optimized */}
+        <div className="flex justify-center mb-6 xs:mb-8 sm:mb-10 md:mb-12">
           <Button 
             href="#start" 
             variant="primary" 
             size="lg"
           >
-            Start your growth journey
+            Start your digital transformation
           </Button>
+        </div>
+
+        {/* Service Keywords Section - SEO Enhanced */}
+        <div className="mb-8 xs:mb-10 sm:mb-12 md:mb-14">
+          <div className="flex flex-wrap items-center justify-center gap-3 xs:gap-4 sm:gap-5 md:gap-6 text-xs xs:text-sm sm:text-base text-gray-400 font-medium">
+            <span className="px-3 py-1.5 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-cosmic/30 transition-colors duration-300">
+              Web Design
+            </span>
+            <span className="px-3 py-1.5 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-cosmic/30 transition-colors duration-300">
+              Frontend Development
+            </span>
+            <span className="px-3 py-1.5 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-cosmic/30 transition-colors duration-300">
+              Backend Development
+            </span>
+            <span className="px-3 py-1.5 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-cosmic/30 transition-colors duration-300">
+              Technical SEO
+            </span>
+            <span className="px-3 py-1.5 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-cosmic/30 transition-colors duration-300">
+              Strategic SEO
+            </span>
+            <span className="px-3 py-1.5 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-cosmic/30 transition-colors duration-300">
+              Conversion Optimization
+            </span>
+            <span className="px-3 py-1.5 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-cosmic/30 transition-colors duration-300">
+              Performance Optimization
+            </span>
+            <span className="px-3 py-1.5 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:border-cosmic/30 transition-colors duration-300">
+              UX/UI Design
+            </span>
+          </div>
         </div>
 
         {/* Transparent Logos Carousel - Just the logos visible */}
