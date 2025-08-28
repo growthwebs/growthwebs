@@ -13,12 +13,9 @@ export const metadata: Metadata = {
   description: 'Transform your business with GrowthWebs. Expert web design, development & strategic SEO. Conversion optimisation & high-performance websites that drive growth.',
   manifest: '/manifest.json',
   icons: {
-    icon: [
-      { url: '/favicon.ico', sizes: 'any' },
-      { url: '/images/favicon/favicon-growthwebs.png', type: 'image/png' }
-    ],
+    icon: '/images/favicon/favicon-growthwebs.png',
     apple: '/images/favicon/favicon-growthwebs.png',
-    shortcut: '/favicon.ico'
+    shortcut: '/images/favicon/favicon-growthwebs.png'
   }
 }
 
