@@ -132,6 +132,48 @@ export default function FeaturedWorkSection() {
           </div>
         </div>
 
+        {/* Service Keywords Section - Glass Finish & Rounded Edges */}
+        <div className="mb-12 sm:mb-16 lg:mb-20">
+          <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:gap-5 lg:gap-6 text-sm sm:text-base md:text-lg text-white/90 font-medium">
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              Web Design
+            </span>
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              Frontend Development
+            </span>
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              Backend Development
+            </span>
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              Technical SEO
+            </span>
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              Strategic SEO
+            </span>
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              Conversion Optimization
+            </span>
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              Performance Optimization
+            </span>
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              UX/UI Design
+            </span>
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              Webflow
+            </span>
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              Wix
+            </span>
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              Framer
+            </span>
+            <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
+              Shopify
+            </span>
+          </div>
+        </div>
+
         {/* Call-to-Action Button */}
         <div className="text-center">
           <Button 
