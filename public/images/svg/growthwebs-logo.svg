@@ -1,0 +1,11 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="30" cy="30" r="28" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.3"/>
+  
+  <!-- G letter -->
+  <path d="M20 20C20 16.6863 22.6863 14 26 14H34C37.3137 14 40 16.6863 40 20V40C40 43.3137 37.3137 46 34 46H26C22.6863 46 20 43.3137 20 40V20Z" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <path d="M40 30H34C32.8954 30 32 29.1046 32 28V32C32 30.8954 32.8954 30 34 30H40" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- W letter -->
+  <path d="M42 20L46 40L50 20L54 40" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
