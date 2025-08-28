@@ -9,8 +9,17 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'Growthwebs Agency - We Build Growth Engines, Not Just Websites',
-  description: 'Stop settling for a digital business card. We build websites that work as hard as you do, fusing strategic thinking with world-class design to create conversion systems.',
+  title: 'GrowthWebs Agency - Web Development & Growth Marketing',
+  description: 'Transform your business with GrowthWebs. Expert web design, development & strategic SEO. Conversion optimisation & high-performance websites that drive growth.',
+  manifest: '/manifest.json',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/images/favicon/favicon-growthwebs.png', type: 'image/png' }
+    ],
+    apple: '/images/favicon/favicon-growthwebs.png',
+    shortcut: '/favicon.ico'
+  }
 }
 
 export default function RootLayout({
