@@ -1,7 +1,7 @@
-import Header from '../components/layout/Header'
-import Footer from '../components/sections/Footer'
-import AnimationProvider from '../components/providers/AnimationProvider'
-import GDPRConsent from '../components/ui/GDPRConsent'
+import Header from '@/app/components/layout/Header'
+import Footer from '@/app/components/sections/Footer'
+import AnimationProvider from '@/app/components/providers/AnimationProvider'
+import GDPRConsent from '@/app/components/ui/GDPRConsent'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
