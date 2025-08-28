@@ -5,8 +5,8 @@ import GDPRConsent from '@/app/components/ui/GDPRConsent'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy - GrowthWebs Agency | Cookie Usage & Privacy Settings',
-  description: 'Learn about GrowthWebs Agency cookie policy. Understand how we use cookies, manage your preferences, and control your privacy settings on our website.',
+  title: 'Cookie Policy - GrowthWebs Agency',
+  description: 'Learn about GrowthWebs Agency cookie policy. Understand how we use cookies, manage your preferences, and control your privacy settings.',
   keywords: [
     'cookie policy',
     'cookie usage',

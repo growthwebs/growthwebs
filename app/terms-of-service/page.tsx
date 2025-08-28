@@ -5,8 +5,8 @@ import GDPRConsent from '@/app/components/ui/GDPRConsent'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Service - GrowthWebs Agency | Web Development & Digital Marketing Terms',
-  description: 'Read GrowthWebs Agency terms of service. Learn about our web development, digital marketing, and consulting services terms, conditions, and policies.',
+  title: 'Terms of Service - GrowthWebs Agency',
+  description: 'Read GrowthWebs Agency terms of service. Learn about our web development, digital marketing, and consulting services terms and conditions.',
   keywords: [
     'terms of service',
     'web development terms',
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     'service agreement',
     'web design terms',
     'consulting terms',
-    'UK web agency',
+    'web agency',
     'legal terms',
     'service conditions'
   ],
