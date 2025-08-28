@@ -62,9 +62,9 @@ const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(({
   const baseClasses = 'inline-flex items-center justify-center font-medium transition-all duration-300 transform focus:outline-none focus:ring-2 focus:ring-cosmic/50 focus:ring-offset-2 focus:ring-offset-midnight disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100 disabled:hover:shadow-none'
   
   const sizeClasses = {
-    sm: 'px-4 py-2.5 text-xs rounded-md',
-    md: 'px-6 py-3 text-sm rounded-lg',
-    lg: 'px-8 py-4 text-base rounded-xl'
+    sm: 'px-3 py-2 text-xs rounded-md',
+    md: 'px-4 xs:px-6 py-2.5 xs:py-3 text-xs xs:text-sm rounded-lg',
+    lg: 'px-6 xs:px-8 py-3 xs:py-4 text-sm xs:text-base rounded-xl'
   }
 
   const variantClasses = {

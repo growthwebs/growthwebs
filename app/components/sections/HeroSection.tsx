@@ -102,52 +102,52 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
+      <div className="relative z-10 text-center max-w-[320px] xs:max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8">
         {/* Enhanced Snowflake Icon with Glow */}
-        <div className="mb-6 sm:mb-8 md:mb-10">
-          <div className="inline-flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-cosmic/20 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-cosmic/40 shadow-lg shadow-cosmic/30">
+        <div className="mb-4 xs:mb-6 sm:mb-8 md:mb-10">
+          <div className="inline-flex items-center justify-center w-16 h-16 xs:w-20 xs:h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-cosmic/20 backdrop-blur-sm rounded-xl xs:rounded-2xl sm:rounded-3xl border border-cosmic/40 shadow-lg shadow-cosmic/30">
             <Image 
               src="/images/svg/snowflake-icon.svg" 
               alt="Snowflake Icon" 
               width={32} 
               height={32}
-              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 text-cosmic drop-shadow-lg"
+              className="w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 text-cosmic drop-shadow-lg"
             />
           </div>
         </div>
         
         {/* Main Headline with Enhanced Glow */}
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light text-lightGrey mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-tight tracking-tight">
+        <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light text-lightGrey mb-3 xs:mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-tight tracking-tight">
           We build{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cosmic via-andromeda to-cosmic drop-shadow-lg">
             growth engines
           </span>
-          <br className="hidden sm:block" />
-          <span className="sm:hidden"> </span>
+          <br className="hidden xs:block" />
+          <span className="xs:hidden"> </span>
           not just websites
         </h1>
         
         {/* Enhanced Subtitle with SEO Keywords */}
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 md:mb-10 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
+        <p className="text-sm xs:text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-4 xs:mb-6 sm:mb-8 md:mb-10 max-w-[280px] xs:max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
           Transform your business with our expert web development, growth marketing, and conversion optimization services. 
           We create high-performance websites that drive leads, sales, and measurable business growth.
         </p>
         
         {/* Enhanced Achievement Badges - Small, Cool & Aesthetic */}
-        <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-10">
-          <span className="px-2 py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90 whitespace-nowrap">
+        <div className="flex flex-wrap items-center justify-center gap-1.5 xs:gap-2 sm:gap-3 md:gap-4 mb-4 xs:mb-6 sm:mb-8 md:mb-10">
+          <span className="px-1.5 py-1 xs:px-2 xs:py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs font-medium tracking-wide text-white/90 whitespace-nowrap">
             #1 in performance benchmarks
           </span>
-          <span className="px-2 py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90 whitespace-nowrap">
+          <span className="px-1.5 py-1 xs:px-2 xs:py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs font-medium tracking-wide text-white/90 whitespace-nowrap">
             #1 in competitive bake-offs
           </span>
-          <span className="px-2 py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90 whitespace-nowrap">
+          <span className="px-1.5 py-1 xs:px-2 xs:py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs font-medium tracking-wide text-white/90 whitespace-nowrap">
             #1 ranking on G2
           </span>
         </div>
         
         {/* Enhanced CTA Button - Double Size for Hero Section */}
-        <div className="flex justify-center mb-10 sm:mb-12 md:mb-14">
+        <div className="flex justify-center mb-8 xs:mb-10 sm:mb-12 md:mb-14">
           <Button 
             href="#start" 
             variant="primary" 
@@ -158,8 +158,8 @@ export default function HeroSection() {
         </div>
 
         {/* Transparent Logos Carousel - Just the logos visible */}
-        <div className="relative mx-auto max-w-5xl sm:max-w-6xl">
-          <div className="flex items-center gap-8 sm:gap-10 md:gap-12 py-6 sm:py-8 animate-scroll">
+        <div className="relative mx-auto max-w-[300px] xs:max-w-5xl sm:max-w-6xl">
+          <div className="flex items-center gap-4 xs:gap-8 sm:gap-10 md:gap-12 py-4 xs:py-6 sm:py-8 animate-scroll">
             {duplicatedCompanies.map((company, index) => (
               <div key={index} className="flex-shrink-0">
                 <Image 
@@ -167,7 +167,7 @@ export default function HeroSection() {
                   alt={`${company} logo`} 
                   width={100} 
                   height={40} 
-                  className="w-16 h-6 sm:w-20 sm:h-8 md:w-24 md:h-10 lg:w-28 lg:h-12 opacity-90 hover:opacity-100 transition-opacity duration-300"
+                  className="w-12 h-4 xs:w-16 xs:h-6 sm:w-20 sm:h-8 md:w-24 md:h-10 lg:w-28 lg:h-12 opacity-90 hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             ))}
@@ -176,13 +176,13 @@ export default function HeroSection() {
       </div>
       
       {/* Enhanced Scroll Indicator - Fixed positioning and no weird jumps */}
-      <div className="absolute bottom-8 sm:bottom-10 md:bottom-12 left-1/2 transform -translate-x-1/2 z-30">
-        <div className="flex flex-col items-center space-y-2 sm:space-y-3 scroll-float">
+      <div className="absolute bottom-6 xs:bottom-8 sm:bottom-10 md:bottom-12 left-1/2 transform -translate-x-1/2 z-30">
+        <div className="flex flex-col items-center space-y-1.5 xs:space-y-2 sm:space-y-3 scroll-float">
           <div className="text-xs sm:text-sm md:text-base text-lightGrey/70 font-light tracking-wider">
             SCROLL
           </div>
-          <div className="w-6 h-10 sm:w-7 sm:h-12 md:w-8 md:h-14 border border-cosmic/50 rounded-full flex justify-center bg-cosmic/10 backdrop-blur-sm relative overflow-hidden">
-            <div className="w-1.5 h-3 sm:h-4 md:h-5 bg-cosmic/90 rounded-full mt-2 sm:mt-3 md:mt-4 animate-pulse shadow-lg shadow-cosmic/40 absolute"></div>
+          <div className="w-5 h-8 xs:w-6 xs:h-10 sm:w-7 sm:h-12 md:w-8 md:h-14 border border-cosmic/50 rounded-full flex justify-center bg-cosmic/10 backdrop-blur-sm relative overflow-hidden">
+            <div className="w-1 h-2.5 xs:h-3 sm:h-4 md:h-5 bg-cosmic/90 rounded-full mt-1.5 xs:mt-2 sm:mt-3 md:mt-4 animate-pulse shadow-lg shadow-cosmic/40 absolute"></div>
           </div>
         </div>
       </div>
