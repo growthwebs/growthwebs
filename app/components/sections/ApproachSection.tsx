@@ -183,11 +183,11 @@ export default function ApproachSection() {
                   </div>
                   <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4 ml-2 sm:ml-3 md:ml-4">
                     <Image 
-                      src="/images/svg/growthwebs-logo.svg" 
-                      alt="Growthwebs Logo" 
-                      width={16} 
-                      height={16}
-                      className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7"
+                      src="/images/svg/grover-icon.svg" 
+                      alt="Grover Icon" 
+                      width={32} 
+                      height={32}
+                      className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10"
                     />
                     <span className="text-gray-700 font-medium text-xs sm:text-sm md:text-base lg:text-lg">Grover</span>
                   </div>

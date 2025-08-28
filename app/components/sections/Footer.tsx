@@ -14,14 +14,15 @@ export default function Footer() {
             
             {/* Brand Column */}
             <div className="space-y-4 sm:space-y-6 text-center sm:text-left">
-              <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300 justify-center sm:justify-start">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-cosmic to-andromeda rounded-xl flex items-center justify-center">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <span className="text-lg sm:text-xl font-bold text-white">Growthwebs</span>
-              </Link>
+              <a className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300 justify-center sm:justify-start" href="/">
+                <Image 
+                  src="/images/svg/growthwebs-logo.svg" 
+                  alt="GrowthWebs Logo" 
+                  width={120} 
+                  height={20}
+                  className="w-20 h-4 sm:w-24 sm:h-4 md:w-28 md:h-5 lg:w-32 lg:h-6"
+                />
+              </a>
               <p className="text-white/70 text-xs sm:text-sm leading-relaxed max-w-xs sm:max-w-sm mx-auto sm:mx-0">
                 We build digital flagships that work as hard as you do. Transforming websites into growth engines.
               </p>

@@ -24,12 +24,14 @@ export default function Header() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity duration-300" onClick={closeMobileMenu}>
-              <div className="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-cosmic to-andromeda rounded-xl flex items-center justify-center">
-                <svg className="w-5 h-5 sm:w-6 sm:h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
-              </div>
-              <span className="text-lg sm:text-xl font-semibold text-white">Growthwebs</span>
+              <Image 
+                src="/images/svg/growthwebs-logo.svg" 
+                alt="GrowthWebs Logo" 
+                width={140} 
+                height={20}
+                className="w-24 h-6 sm:w-28 sm:h-6 lg:w-32 lg:h-7"
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}
