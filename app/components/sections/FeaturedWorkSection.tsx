@@ -179,7 +179,7 @@ export default function FeaturedWorkSection() {
           <Button 
             href="#process" 
             variant="primary" 
-            size="md"
+            size="lg"
           >
             See our process
           </Button>

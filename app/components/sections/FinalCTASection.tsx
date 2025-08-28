@@ -76,19 +76,19 @@ export default function FinalCTASection() {
             Your website should be more than just a pretty face. It should be a growth engine that works as hard as you do.
           </p>
           
-          {/* CTA Buttons - Smaller & More Proportional */}
+          {/* CTA Buttons - Matching Hero Section Size */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-10 sm:mb-12">
             <Button 
               href="#schedule" 
               variant="primary" 
-              size="md"
+              size="lg"
             >
               Schedule a call
             </Button>
             <Button 
               href="#work" 
               variant="secondary" 
-              size="md"
+              size="lg"
             >
               See our work
             </Button>
