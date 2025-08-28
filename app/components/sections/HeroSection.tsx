@@ -102,45 +102,46 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-5xl sm:max-w-6xl md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 text-center max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
         {/* Enhanced Snowflake Icon with Glow */}
         <div className="mb-6 sm:mb-8 md:mb-10">
-          <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 bg-cosmic/20 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-cosmic/40 shadow-lg shadow-cosmic/30">
+          <div className="inline-flex items-center justify-center w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 bg-cosmic/20 backdrop-blur-sm rounded-2xl sm:rounded-3xl border border-cosmic/40 shadow-lg shadow-cosmic/30">
             <Image 
               src="/images/svg/snowflake-icon.svg" 
               alt="Snowflake Icon" 
               width={32} 
               height={32}
-              className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-cosmic drop-shadow-lg"
+              className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14 lg:w-16 lg:h-16 text-cosmic drop-shadow-lg"
             />
           </div>
         </div>
         
         {/* Main Headline with Enhanced Glow */}
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-light text-lightGrey mb-6 sm:mb-8 md:mb-10 leading-tight tracking-tight">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light text-lightGrey mb-4 sm:mb-6 md:mb-8 lg:mb-10 leading-tight tracking-tight">
           We build{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cosmic via-andromeda to-cosmic drop-shadow-lg">
             growth engines
           </span>
-          <br />
+          <br className="hidden sm:block" />
+          <span className="sm:hidden"> </span>
           not just websites
         </h1>
         
         {/* Enhanced Subtitle with SEO Keywords */}
-        <p className="text-lg sm:text-xl md:text-2xl text-gray-300 mb-8 sm:mb-10 max-w-4xl mx-auto leading-relaxed">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 mb-6 sm:mb-8 md:mb-10 max-w-3xl sm:max-w-4xl mx-auto leading-relaxed">
           Transform your business with our expert web development, growth marketing, and conversion optimization services. 
           We create high-performance websites that drive leads, sales, and measurable business growth.
         </p>
         
         {/* Enhanced Achievement Badges - Small, Cool & Aesthetic */}
         <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:gap-4 mb-6 sm:mb-8 md:mb-10">
-          <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90">
+          <span className="px-2 py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90 whitespace-nowrap">
             #1 in performance benchmarks
           </span>
-          <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90">
+          <span className="px-2 py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90 whitespace-nowrap">
             #1 in competitive bake-offs
           </span>
-          <span className="px-3 py-1.5 sm:px-4 sm:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90">
+          <span className="px-2 py-1.5 sm:px-3 md:px-4 sm:py-1.5 md:py-2 bg-white/5 backdrop-blur-sm rounded-full border border-white/20 shadow-lg shadow-black/20 hover:bg-white/10 hover:border-white/30 transition-all duration-300 text-xs sm:text-sm font-medium tracking-wide text-white/90 whitespace-nowrap">
             #1 ranking on G2
           </span>
         </div>

@@ -29,7 +29,7 @@ export default function Header() {
                 alt="GrowthWebs Logo" 
                 width={140} 
                 height={20}
-                className="w-24 h-6 sm:w-28 sm:h-6 lg:w-32 lg:h-7"
+                className="w-28 h-7 sm:w-32 sm:h-8 md:w-36 md:h-9 lg:w-40 lg:h-10 xl:w-44 xl:h-11"
                 priority
               />
             </Link>

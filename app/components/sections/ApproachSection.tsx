@@ -187,7 +187,7 @@ export default function ApproachSection() {
                       alt="Grover Icon" 
                       width={32} 
                       height={32}
-                      className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10"
+                      className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 xl:w-11 xl:h-11 2xl:w-12 2xl:h-12"
                     />
                     <span className="text-gray-700 font-medium text-xs sm:text-sm md:text-base lg:text-lg">Grover</span>
                   </div>
