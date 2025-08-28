@@ -145,16 +145,16 @@ export default function ApproachSection() {
         <div className="absolute bottom-1/8 right-1/8 w-1 h-1 bg-andromeda/20 rounded-full animate-ping" style={{animationDelay: '19s'}}></div>
       </div>
       
-      {/* Content Section with SEO-Optimized Headings */}
-      <div className="relative z-10 pt-20 pb-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-6xl mx-auto text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-white mb-6 sm:mb-8 leading-tight">
+              {/* Content Section with SEO-Optimized Headings */}
+        <div className="relative z-10 pt-16 xs:pt-18 sm:pt-20 pb-12 xs:pb-14 sm:pb-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-6xl mx-auto text-center mb-8 xs:mb-10 sm:mb-12 md:mb-14 lg:mb-16 px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 xs:mb-6 sm:mb-8 leading-tight">
             Our{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cosmic via-andromeda to-cosmic">
               growth-first approach
             </span>
           </h2>
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8 sm:mb-10 md:mb-12">
+          <p className="text-base xs:text-lg sm:text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-6 xs:mb-8 sm:mb-10 md:mb-12">
             We don't just build websites – we create digital growth engines that drive measurable business results. 
             Our proven methodology combines strategic thinking, technical excellence, and data-driven optimization.
           </p>
@@ -165,7 +165,7 @@ export default function ApproachSection() {
         {/* Interactive Chat Interface */}
         <div 
           ref={sceneRef}
-          className="relative flex items-center justify-center min-h-[600px] sm:min-h-[700px] md:min-h-[800px] lg:min-h-[900px] xl:min-h-[1000px]"
+          className="relative flex items-center justify-center min-h-[400px] xs:min-h-[500px] sm:min-h-[600px] md:min-h-[700px] lg:min-h-[800px] xl:min-h-[900px]"
           style={{
             transform: `perspective(1000px) rotateX(${(mousePosition.y - 0.5) * 5}deg) rotateY(${(mousePosition.x - 0.5) * 5}deg)`,
             transition: 'transform 0.1s ease-out'
@@ -202,7 +202,7 @@ export default function ApproachSection() {
               </div>
 
               {/* Chat Content - Responsive height with proper scrolling */}
-              <div className="p-3 sm:p-4 md:p-5 lg:p-6 space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 h-[320px] sm:h-[380px] md:h-[440px] lg:h-[500px] xl:h-[560px] 2xl:h-[620px] bg-white overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+              <div className="p-3 sm:p-4 md:p-5 lg:p-6 space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 h-[280px] xs:h-[320px] sm:h-[380px] md:h-[440px] lg:h-[500px] xl:h-[560px] 2xl:h-[620px] bg-white overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                 {/* Display conversation up to current index */}
                 {conversation.slice(0, currentMessageIndex + 1).map((message) => (
                   <div key={message.id} className={`flex items-start space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-5 ${message.sender === 'user' ? 'justify-end' : ''}`}>
