@@ -5,6 +5,8 @@ import FeaturedWorkSection from './components/sections/FeaturedWorkSection'
 import FinalCTASection from './components/sections/FinalCTASection'
 import Footer from './components/sections/Footer'
 import AnimationProvider from './components/providers/AnimationProvider'
+import GDPRConsent from './components/ui/GDPRConsent'
+import CookiePreferencesManager from './components/ui/CookiePreferencesManager'
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
           <FinalCTASection />
           <Footer />
         </main>
+        <GDPRConsent />
+        <CookiePreferencesManager />
       </div>
     </AnimationProvider>
   )

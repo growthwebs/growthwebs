@@ -76,7 +76,7 @@ export default function ApproachSection() {
   }, [currentMessageIndex, conversation.length])
 
   return (
-    <section className="relative h-[95vh] overflow-hidden bg-midnight">
+    <section className="relative overflow-hidden bg-midnight">
       {/* Enhanced Aurora Borealis Background Effects */}
       <div className="absolute inset-0">
         {/* Subtle star field - much darker and hidden */}
@@ -145,7 +145,7 @@ export default function ApproachSection() {
         <div className="absolute bottom-1/8 right-1/8 w-1 h-1 bg-andromeda/20 rounded-full animate-ping" style={{animationDelay: '19s'}}></div>
       </div>
       
-      <div className="relative z-10 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col justify-center pt-16 sm:pt-20 md:pt-24 lg:pt-28">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col pt-16 sm:pt-20 md:pt-24 lg:pt-28">
         {/* Section Header - Enhanced spacing and better proportions */}
         <div className="text-center mb-8 sm:mb-10 md:mb-12 lg:mb-14 flex-shrink-0">
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-light text-lightGrey mb-6 sm:mb-8 md:mb-10 leading-tight tracking-tight">
@@ -163,100 +163,97 @@ export default function ApproachSection() {
         {/* Animated Dashboard Scene - Better spacing and positioning */}
         <div 
           ref={sceneRef}
-          className="relative mx-auto max-w-4xl sm:max-w-5xl lg:max-w-6xl flex-1 flex items-center justify-center"
+          className="relative mx-auto max-w-4xl sm:max-w-5xl lg:max-w-6xl flex items-center justify-center"
           style={{
             transform: `perspective(1000px) rotateY(${(mousePosition.x - 0.5) * 5}deg) rotateX(${(mousePosition.y - 0.5) * 5}deg)`,
             transition: 'transform 0.1s ease-out'
           }}
         >
-          {/* Floating Chat Card - macOS Tahoe Style - Enhanced spacing */}
-          <div className="relative mx-auto w-full max-w-[360px] sm:max-w-lg md:max-w-xl lg:max-w-2xl xl:max-w-3xl z-50">
+          {/* Floating Chat Card - Complete Responsive Design with Scrolling */}
+          <div className="relative mx-auto w-full max-w-[380px] sm:max-w-[440px] md:max-w-[520px] lg:max-w-[640px] xl:max-w-[720px] 2xl:max-w-[800px] z-50">
             <div className="rounded-2xl sm:rounded-3xl bg-white shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25),0_0_0_1px_rgba(255,255,255,0.1)_inset] border border-white/20 overflow-hidden">
-              {/* macOS Window Header - Better padding */}
-              <div className="bg-gradient-to-b from-gray-50 to-gray-100 px-6 sm:px-8 py-4 sm:py-5 border-b border-gray-200/50 flex items-center justify-between">
-                <div className="flex items-center space-x-3 sm:space-x-4">
-                  {/* Window Controls */}
-                  <div className="flex space-x-2 sm:space-x-3">
-                    <div className="w-3 h-3 sm:w-3.5 sm:h-3.5 bg-red-500 rounded-full"></div>
-                    <div className="w-3 h-3 sm:w-3.5 sm:h-3.5 bg-yellow-400 rounded-full"></div>
-                    <div className="w-3 h-3 sm:w-3.5 sm:h-3.5 bg-green-500 rounded-full"></div>
+              {/* macOS Window Header - Responsive spacing */}
+              <div className="bg-gradient-to-b from-gray-50 to-gray-100 px-3 sm:px-4 md:px-5 lg:px-6 py-2.5 sm:py-3 md:py-4 lg:py-5 border-b border-gray-200/50 flex items-center justify-between">
+                <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4">
+                  {/* Window Controls - Responsive sizing */}
+                  <div className="flex space-x-1.5 sm:space-x-2 md:space-x-2.5 lg:space-x-3">
+                    <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4 bg-red-500 rounded-full"></div>
+                    <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4 bg-yellow-400 rounded-full"></div>
+                    <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 md:w-3.5 md:h-3.5 lg:w-4 lg:h-4 bg-green-500 rounded-full"></div>
                   </div>
-                  <div className="flex items-center space-x-2 sm:space-x-3 ml-2 sm:ml-3">
+                  <div className="flex items-center space-x-2 sm:space-x-3 md:space-x-4 ml-2 sm:ml-3 md:ml-4">
                     <Image 
                       src="/images/svg/growthwebs-logo.svg" 
                       alt="Growthwebs Logo" 
                       width={16} 
                       height={16}
-                      className="w-5 h-5 sm:w-6 sm:h-6"
+                      className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7"
                     />
-                    <span className="text-gray-700 font-medium text-sm sm:text-base">Grover</span>
+                    <span className="text-gray-700 font-medium text-xs sm:text-sm md:text-base lg:text-lg">Grover</span>
                   </div>
                 </div>
                 <div className="text-gray-500">
-                  <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7" fill="currentColor" viewBox="0 0 20 20">
                     <path d="M10 6a2 2 0 110-4 2 2 0 010 4zM10 12a2 2 0 110-4 2 2 0 010 4zM10 18a2 2 0 110-4 2 2 0 010 4z" />
                   </svg>
                 </div>
               </div>
 
-              {/* Chat Content - Enhanced spacing and better proportions */}
-              <div className="p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-5 md:space-y-6 h-[400px] sm:h-[450px] md:h-[500px] lg:h-[550px] xl:h-[600px] flex flex-col justify-end bg-white overflow-hidden">
+              {/* Chat Content - Responsive height with proper scrolling */}
+              <div className="p-3 sm:p-4 md:p-5 lg:p-6 space-y-3 sm:space-y-4 md:space-y-5 lg:space-y-6 h-[320px] sm:h-[380px] md:h-[440px] lg:h-[500px] xl:h-[560px] 2xl:h-[620px] bg-white overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
                 {/* Display conversation up to current index */}
                 {conversation.slice(0, currentMessageIndex + 1).map((message) => (
-                  <div key={message.id} className={`flex items-start space-x-3 sm:space-x-4 md:space-x-5 ${message.sender === 'user' ? 'justify-end' : ''}`}>
+                  <div key={message.id} className={`flex items-start space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-5 ${message.sender === 'user' ? 'justify-end' : ''}`}>
                     {message.sender === 'ai' && (
-                      <div className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 bg-gradient-to-br from-cosmic to-andromeda rounded-full flex items-center justify-center flex-shrink-0">
-                        <span className="text-white text-xs sm:text-sm font-medium">{message.avatar}</span>
+                      <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 bg-gradient-to-br from-cosmic to-andromeda rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium">{message.avatar}</span>
                       </div>
                     )}
                     
-                    <div className={`rounded-xl sm:rounded-2xl px-4 py-3 sm:px-5 sm:py-4 md:px-6 md:py-5 max-w-[220px] sm:max-w-xs md:max-w-sm lg:max-w-md shadow-sm ${
+                    <div className={`rounded-xl sm:rounded-2xl px-3 py-2.5 sm:px-4 sm:py-3 md:px-5 md:py-4 lg:px-6 lg:py-5 max-w-[220px] sm:max-w-[260px] md:max-w-[300px] lg:max-w-[340px] xl:max-w-[380px] 2xl:max-w-[420px] shadow-sm ${
                       message.sender === 'user' 
                         ? 'bg-gradient-to-r from-cosmic to-andromeda text-white' 
                         : 'bg-gray-100 text-gray-700'
                     }`}>
-                      <p className="text-sm sm:text-base md:text-lg leading-relaxed">{message.text}</p>
+                      <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">{message.text}</p>
                     </div>
                     
                     {message.sender === 'user' && (
-                      <div className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 bg-gradient-to-br from-orion to-cosmic rounded-full flex items-center justify-center flex-shrink-0">
-                        <span className="text-white text-xs sm:text-sm font-medium">{message.avatar}</span>
+                      <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 bg-gradient-to-br from-orion to-cosmic rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium">{message.avatar}</span>
                       </div>
                     )}
                   </div>
                 ))}
 
-                {/* Typing Indicator - Enhanced spacing */}
+                {/* Typing Indicator - Responsive spacing */}
                 {isTyping && (
-                  <div className={`flex items-start space-x-3 sm:space-x-4 md:space-x-5 ${typingFor === 'user' ? 'justify-end' : ''}`}>
+                  <div className={`flex items-start space-x-2 sm:space-x-3 md:space-x-4 lg:space-x-5 ${typingFor === 'user' ? 'justify-end' : ''}`}>
                     {typingFor === 'ai' && (
-                      <div className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 bg-gradient-to-br from-cosmic to-andromeda rounded-full flex items-center justify-center flex-shrink-0">
-                        <span className="text-white text-xs sm:text-sm font-medium">AI</span>
+                      <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 bg-gradient-to-br from-cosmic to-andromeda rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium">AI</span>
                       </div>
                     )}
                     
-                    <div className={`rounded-xl sm:rounded-2xl px-4 py-3 sm:px-5 sm:py-4 md:px-6 md:py-5 shadow-sm ${
+                    <div className={`rounded-xl sm:rounded-2xl px-3 py-2.5 sm:px-4 sm:py-3 md:px-5 md:py-4 lg:px-6 lg:py-5 shadow-sm ${
                       typingFor === 'user' 
-                        ? 'bg-gradient-to-r from-cosmic to-andromeda' 
+                        ? 'bg-gradient-to-br from-cosmic to-andromeda' 
                         : 'bg-gray-100'
                     }`}>
-                      <div className="flex space-x-1.5 sm:space-x-2">
-                        <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 rounded-full animate-bounce" style={{backgroundColor: typingFor === 'user' ? 'white' : '#6B7280'}}></div>
-                        <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 rounded-full animate-bounce" style={{backgroundColor: typingFor === 'user' ? 'white' : '#6B7280', animationDelay: '0.1s'}}></div>
-                        <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 rounded-full animate-bounce" style={{backgroundColor: typingFor === 'user' ? 'white' : '#6B7280', animationDelay: '0.2s'}}></div>
+                      <div className="flex space-x-1.5 sm:space-x-2 md:space-x-2.5 lg:space-x-3">
+                        <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 lg:w-3.5 lg:h-3.5 rounded-full animate-bounce" style={{backgroundColor: typingFor === 'user' ? 'white' : '#6B7280'}}></div>
+                        <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 lg:w-3.5 lg:h-3.5 rounded-full animate-bounce" style={{backgroundColor: typingFor === 'user' ? 'white' : '#6B7280', animationDelay: '0.1s'}}></div>
+                        <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 md:w-3 md:h-3 lg:w-3.5 lg:h-3.5 rounded-full animate-bounce" style={{backgroundColor: typingFor === 'user' ? 'white' : '#6B7280', animationDelay: '0.2s'}}></div>
                       </div>
                     </div>
                     
                     {typingFor === 'user' && (
-                      <div className="w-7 h-7 sm:w-8 sm:h-8 md:w-9 md:h-9 lg:w-10 lg:h-10 bg-gradient-to-br from-orion to-cosmic rounded-full flex items-center justify-center flex-shrink-0">
-                        <span className="text-white text-xs sm:text-sm font-medium">U</span>
+                      <div className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 lg:w-9 lg:h-9 xl:w-10 xl:h-10 bg-gradient-to-br from-orion to-cosmic rounded-full flex items-center justify-center flex-shrink-0">
+                        <span className="text-white text-xs sm:text-sm md:text-base lg:text-lg font-medium">U</span>
                       </div>
                     )}
                   </div>
                 )}
-
-                {/* Invisible spacer to maintain consistent height */}
-                <div className="flex-1"></div>
               </div>
             </div>
           </div>
