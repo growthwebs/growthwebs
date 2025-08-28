@@ -20,7 +20,7 @@ export default function Footer() {
                   alt="GrowthWebs Logo" 
                   width={120} 
                   height={20}
-                  className="w-24 h-5 sm:w-28 sm:h-6 md:w-32 md:h-7 lg:w-36 lg:h-8 xl:w-40 xl:h-9"
+                  className="w-32 h-6 sm:w-28 sm:h-6 md:w-32 md:h-7 lg:w-36 lg:h-8 xl:w-40 xl:h-9"
                 />
               </a>
               <p className="text-white/70 text-xs sm:text-sm leading-relaxed max-w-xs sm:max-w-sm mx-auto sm:mx-0">
