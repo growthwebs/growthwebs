@@ -106,7 +106,7 @@ export default function HeroSection() {
 
         
         {/* Main Headline with Enhanced Glow */}
-        <h1 className="text-4xl xs:text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl 2xl:text-[10rem] font-light text-lightGrey mb-4 xs:mb-6 sm:mb-8 md:mb-10 lg:mb-12 leading-tight tracking-tight">
+        <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light text-lightGrey mb-4 xs:mb-6 sm:mb-8 md:mb-10 lg:mb-12 leading-tight tracking-tight">
           We build{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cosmic via-andromeda to-cosmic drop-shadow-lg">
             growth engines
@@ -117,7 +117,7 @@ export default function HeroSection() {
         </h1>
         
         {/* Enhanced Subtitle with Comprehensive SEO Keywords */}
-        <p className="text-base xs:text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-gray-300 mb-6 xs:mb-8 sm:mb-10 md:mb-12 lg:mb-14 max-w-[280px] xs:max-w-2xl sm:max-w-3xl mx-auto leading-relaxed">
+        <p className="text-sm xs:text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl text-gray-300 mb-6 xs:mb-8 sm:mb-10 md:mb-12 lg:mb-14 max-w-[280px] xs:max-w-2xl sm:max-w-3xl mx-auto leading-relaxed">
           Expert web design, development & strategic SEO. 
           Conversion optimization & high-performance websites that drive growth.
         </p>
