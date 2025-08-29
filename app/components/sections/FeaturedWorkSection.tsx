@@ -1,6 +1,8 @@
 'use client'
 
 import Button from '../ui/Button'
+import TRONCircuitNetwork from '../ui/TRONCircuitNetwork'
+import EnhancedFeatureCard from '../ui/EnhancedFeatureCard'
 
 export default function FeaturedWorkSection() {
   return (
@@ -78,57 +80,57 @@ export default function FeaturedWorkSection() {
           </p>
         </div>
 
-        {/* 3-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 mb-12 sm:mb-16 lg:mb-20">
-          {/* Column 1: Data-Driven Design */}
-          <div className="group">
-            <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl p-6 sm:p-8 hover:border-white/30 hover:bg-white/15 transition-all duration-500 hover:scale-105 transform shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25),0_0_0_1px_rgba(255,255,255,0.1)_inset]">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-cosmic/20 to-andromeda/20 rounded-2xl border border-white/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        {/* Enhanced 3D Feature Cards with TRON Circuit Network */}
+        <div className="relative mb-12 sm:mb-16 lg:mb-20">
+          {/* TRON Circuit Network Overlay */}
+          <TRONCircuitNetwork className="z-10" />
+          
+          {/* Enhanced 3-Column Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 lg:gap-12 relative z-20">
+            {/* Enhanced Card 1: Data-Driven Design */}
+            <EnhancedFeatureCard
+              icon={
+                <svg className="w-8 h-8 sm:w-10 sm:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 group-hover:text-cosmic transition-colors duration-300">
-                Data-driven design
-              </h3>
-              <p className="text-white/80 text-sm sm:text-base leading-relaxed">
-                We start with your business goals, not our design portfolio. Every decision is backed by data to ensure it drives results.
-              </p>
-            </div>
-          </div>
+              }
+              title="Data-driven design"
+              description="We start with your business goals, not our design portfolio. Every decision is backed by data to ensure it drives results."
+              gradientFrom="from-cosmic/20"
+              gradientTo="to-andromeda/20"
+              accentColor="cosmic"
+              index={0}
+            />
 
-          {/* Column 2: AI-Powered Growth */}
-          <div className="group">
-            <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl p-6 sm:p-8 hover:border-white/30 hover:bg-white/15 transition-all duration-500 hover:scale-105 transform shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25),0_0_0_1px_rgba(255,255,255,0.1)_inset]">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-andromeda/20 to-orion/20 rounded-2xl border border-white/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {/* Enhanced Card 2: AI-Powered Growth */}
+            <EnhancedFeatureCard
+              icon={
+                <svg className="w-8 h-8 sm:w-10 sm:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                 </svg>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 group-hover:text-andromeda transition-colors duration-300">
-                AI-powered growth
-              </h3>
-              <p className="text-white/80 text-sm sm:text-base leading-relaxed">
-                We integrate intelligent automation to not just attract leads, but to qualify and nurture them, turning your website into a proactive sales channel.
-              </p>
-            </div>
-          </div>
+              }
+              title="AI-powered growth"
+              description="We integrate intelligent automation to not just attract leads, but to qualify and nurture them, turning your website into a proactive sales channel."
+              gradientFrom="from-andromeda/20"
+              gradientTo="to-orion/20"
+              accentColor="andromeda"
+              index={1}
+            />
 
-          {/* Column 3: A True Partnership */}
-          <div className="group">
-            <div className="bg-white/10 backdrop-blur-2xl border border-white/20 rounded-3xl p-6 sm:p-8 hover:border-white/30 hover:bg-white/15 transition-all duration-500 hover:scale-105 transform shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25),0_0_0_1px_rgba(255,255,255,0.1)_inset]">
-              <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-orion/20 to-cosmic/20 rounded-2xl border border-white/20 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            {/* Enhanced Card 3: A True Partnership */}
+            <EnhancedFeatureCard
+              icon={
+                <svg className="w-8 h-8 sm:w-10 sm:h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                 </svg>
-              </div>
-              <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 group-hover:text-orion transition-colors duration-300">
-                A true partnership
-              </h3>
-              <p className="text-white/80 text-sm sm:text-base leading-relaxed">
-                We operate as an extension of your team. You get a single point of contact and a transparent process from start to finish.
-              </p>
-            </div>
+              }
+              title="A true partnership"
+              description="We operate as an extension of your team. You get a single point of contact and a transparent process from start to finish."
+              gradientFrom="from-orion/20"
+              gradientTo="to-cosmic/20"
+              accentColor="orion"
+              index={2}
+            />
           </div>
         </div>
 
