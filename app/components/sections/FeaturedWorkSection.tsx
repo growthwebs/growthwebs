@@ -65,16 +65,16 @@ export default function FeaturedWorkSection() {
         <div className="absolute bottom-1/8 right-1/8 w-1 h-1 bg-andromeda/18 rounded-full animate-ping" style={{animationDelay: '19s'}}></div>
       </div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24 lg:py-32">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 xs:px-5 sm:px-6 lg:px-8 py-20 xs:py-22 sm:py-24 lg:py-32">
         {/* Section Header */}
-        <div className="text-center mb-16 sm:mb-20 lg:mb-24">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-lightGrey mb-6 sm:mb-8 leading-tight">
+        <div className="text-center mb-16 xs:mb-18 sm:mb-20 lg:mb-24">
+          <h2 className="text-3xl xs:text-4xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-lightGrey mb-6 xs:mb-8 sm:mb-8 leading-tight">
             We build digital{' '}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cosmic via-andromeda to-cosmic">
               flagships
             </span>
           </h2>
-          <p className="text-lg sm:text-xl text-lightGrey/80 max-w-4xl mx-auto font-light leading-relaxed px-4">
+          <p className="text-base xs:text-lg sm:text-xl text-lightGrey/80 max-w-4xl mx-auto font-light leading-relaxed px-4">
             At Growthwebs, we fuse strategic thinking with world-class design. We don't just build pages; we architect conversion systems. 
             Our process is built on a single belief: a great website is a beautiful business tool.
           </p>
@@ -187,6 +187,9 @@ export default function FeaturedWorkSection() {
           </Button>
         </div>
       </div>
+
+      {/* Bottom Fade Mask - Subtle Transition to Next Section */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-midnight via-midnight/80 to-transparent pointer-events-none z-20"></div>
     </section>
   )
 }

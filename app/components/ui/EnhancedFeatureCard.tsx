@@ -36,7 +36,7 @@ export default function EnhancedFeatureCard({
   const springConfig = { damping: 30, stiffness: 500 }  // Even smoother motion like chat window
   const springRotateX = useSpring(rotateX, springConfig)
   const springRotateY = useSpring(rotateY, springConfig)
-  const springScale = useSpring(isHovered ? 1.01 : 1, springConfig)  // Ultra-subtle: reduced from 1.02 to 1.01
+  const springScale = useSpring(1, springConfig)  // No scaling on hover - matches ApproachSection
   const springZ = useSpring(isHovered ? 4 : 0, springConfig)  // Ultra-subtle: reduced from 8 to 4
 
   // Intersection observer for entrance animation
@@ -104,11 +104,11 @@ export default function EnhancedFeatureCard({
         onMouseLeave={handleMouseLeave}
       >
         {/* Enhanced Card Background */}
-        <div className="relative h-full bg-gradient-to-br from-white/5 via-white/8 to-white/3 backdrop-blur-2xl border border-white/20 rounded-3xl p-6 sm:p-8 overflow-hidden group-hover:border-white/40 transition-all duration-700">
+        <div className="relative h-full min-h-[280px] sm:min-h-[320px] md:min-h-[360px] lg:min-h-[320px] xl:min-h-[360px] 2xl:min-h-[400px] bg-gradient-to-br from-white/5 via-white/8 to-white/3 backdrop-blur-2xl border border-white/20 rounded-3xl p-5 xs:p-6 sm:p-8 overflow-hidden group-hover:border-white/40 transition-all duration-700">
           
           {/* Animated Background Pattern */}
           <div className="absolute inset-0 opacity-20 group-hover:opacity-25 transition-opacity duration-700">
-            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent transform rotate-45 scale-150 group-hover:scale-160 transition-transform duration-1000" />
+            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent transform rotate-45 scale-150 transition-transform duration-1000" />
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:20px_20px] group-hover:bg-[length:19px_19px] transition-all duration-1000" />
           </div>
 
@@ -116,9 +116,9 @@ export default function EnhancedFeatureCard({
           <div className="absolute inset-0 rounded-3xl bg-gradient-to-r from-transparent via-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
           
           {/* Enhanced Icon Container */}
-          <div className="relative mb-6 group-hover:mb-8 transition-all duration-500">
+          <div className="relative mb-5 xs:mb-6 group-hover:mb-8 transition-all duration-500">
             {/* Icon Background with 3D Effect */}
-            <div className={`relative w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br ${gradientFrom} ${gradientTo} rounded-2xl border border-white/20 flex items-center justify-center group-hover:scale-102 group-hover:rotate-0.5 transition-all duration-500 shadow-lg group-hover:shadow-xl`}>
+            <div className={`relative w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br ${gradientFrom} ${gradientTo} rounded-2xl border border-white/20 flex items-center justify-center group-hover:rotate-0.5 transition-all duration-500 shadow-lg group-hover:shadow-xl`}>
               {/* Icon Glow */}
               <div className={`absolute inset-0 bg-gradient-to-br ${gradientFrom} ${gradientTo} rounded-2xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-500`} />
               
@@ -145,19 +145,19 @@ export default function EnhancedFeatureCard({
             </div>
             
             {/* Energy Pulse Ring */}
-            <div className={`absolute inset-0 w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br ${gradientFrom} ${gradientTo} rounded-2xl opacity-20 group-hover:opacity-40 scale-150 group-hover:scale-200 transition-all duration-1000 blur-sm`} />
+            <div className={`absolute inset-0 w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br ${gradientFrom} ${gradientTo} rounded-2xl opacity-20 group-hover:opacity-40 scale-150 transition-all duration-1000 blur-sm`} />
           </div>
 
           {/* Enhanced Content */}
           <div className="relative z-10">
             {/* Title with Glow Effect */}
-            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 group-hover:mb-6 transition-all duration-500">
+            <h3 className="text-lg xs:text-xl sm:text-2xl font-semibold text-white mb-4 xs:mb-5 group-hover:mb-6 transition-all duration-500">
               {title}
               <div className={`absolute inset-0 bg-gradient-to-r ${gradientFrom} ${gradientTo} blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
             </h3>
             
             {/* Description with Enhanced Typography */}
-            <p className="text-white/80 text-sm sm:text-base leading-relaxed group-hover:text-white/90 transition-colors duration-500 group-hover:leading-relaxed">
+            <p className="text-white/80 text-sm xs:text-sm sm:text-base leading-relaxed group-hover:text-white/90 transition-colors duration-500 group-hover:leading-relaxed">
               {description}
             </p>
           </div>

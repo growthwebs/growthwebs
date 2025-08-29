@@ -102,11 +102,11 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-[320px] xs:max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8">
+      <div className="relative z-10 text-center max-w-[340px] xs:max-w-4xl sm:max-w-5xl md:max-w-6xl lg:max-w-7xl mx-auto px-3 xs:px-4 sm:px-5 md:px-6 lg:px-8">
 
         
         {/* Main Headline with Enhanced Glow */}
-        <h1 className="text-3xl xs:text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light text-lightGrey mb-4 xs:mb-6 sm:mb-8 md:mb-10 lg:mb-12 leading-tight tracking-tight">
+        <h1 className="text-4xl xs:text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-light text-lightGrey mb-4 xs:mb-6 sm:mb-8 md:mb-10 lg:mb-12 leading-tight tracking-tight">
           We build{' '}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-cosmic via-andromeda to-cosmic drop-shadow-lg">
             growth engines
@@ -117,7 +117,7 @@ export default function HeroSection() {
         </h1>
         
         {/* Enhanced Subtitle with Comprehensive SEO Keywords */}
-        <p className="text-sm xs:text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl text-gray-300 mb-6 xs:mb-8 sm:mb-10 md:mb-12 lg:mb-14 max-w-[280px] xs:max-w-2xl sm:max-w-3xl mx-auto leading-relaxed">
+        <p className="text-base xs:text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl text-gray-300 mb-6 xs:mb-8 sm:mb-10 md:mb-12 lg:mb-14 max-w-[300px] xs:max-w-2xl sm:max-w-3xl mx-auto leading-relaxed">
           Expert web design, development & strategic SEO. 
           Conversion optimisation & high-performance websites that drive growth.
         </p>
@@ -138,8 +138,8 @@ export default function HeroSection() {
 
 
         {/* Transparent Logos Carousel - Just the logos visible */}
-        <div className="relative mx-auto max-w-[300px] xs:max-w-5xl sm:max-w-6xl">
-          <div className="flex items-center gap-4 xs:gap-8 sm:gap-10 md:gap-12 py-4 xs:py-6 sm:py-8 animate-scroll">
+        <div className="relative mx-auto max-w-[320px] xs:max-w-4xl sm:max-w-5xl lg:max-w-6xl">
+          <div className="flex items-center gap-5 xs:gap-6 sm:gap-8 md:gap-10 lg:gap-12 py-4 xs:py-5 sm:py-6 md:py-8 animate-scroll">
             {duplicatedCompanies.map((company, index) => (
               <div key={index} className="flex-shrink-0">
                 <Image 
@@ -147,7 +147,7 @@ export default function HeroSection() {
                   alt={`${company} logo`} 
                   width={100} 
                   height={40} 
-                  className="w-12 h-4 xs:w-16 xs:h-6 sm:w-20 sm:h-8 md:w-24 md:h-10 lg:w-28 lg:h-12 opacity-90 hover:opacity-100 transition-opacity duration-300"
+                  className="w-16 h-6 xs:w-18 xs:h-7 sm:w-20 sm:h-8 md:w-22 md:h-9 lg:w-24 lg:h-10 opacity-90 hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             ))}
@@ -166,6 +166,9 @@ export default function HeroSection() {
           </div>
         </div>
       </div>
+
+      {/* Bottom Fade Mask - Subtle Transition to Next Section */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-midnight via-midnight/80 to-transparent pointer-events-none z-20"></div>
     </section>
   )
 }

@@ -5,6 +5,9 @@ import Button from '../ui/Button'
 export default function FinalCTASection() {
   return (
     <section className="relative overflow-hidden bg-midnight">
+      {/* Top Fade Mask - Subtle Transition from Previous Section */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-midnight via-midnight/80 to-transparent pointer-events-none z-20"></div>
+      
       {/* Consistent Background Effects */}
       <div className="absolute inset-0">
         {/* Subtle star field - matching other sections */}

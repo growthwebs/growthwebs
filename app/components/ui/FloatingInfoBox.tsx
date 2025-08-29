@@ -91,7 +91,7 @@ export default function FloatingInfoBox({
   return (
     <div 
       ref={boxRef}
-      className={`relative group transition-all duration-700 hover:scale-105 ${
+      className={`relative group transition-all duration-700 ${
         position === 'left' 
           ? 'lg:mr-4 xl:mr-6 2xl:mr-8' 
           : 'lg:ml-4 xl:ml-6 2xl:ml-8'
