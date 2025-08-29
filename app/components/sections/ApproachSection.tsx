@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
 import FloatingInfoBox from '@/app/components/ui/FloatingInfoBox'
+import ElectricCircuitConnector from '@/app/components/ui/ElectricCircuitConnector'
 
 export default function ApproachSection() {
   const sceneRef = useRef<HTMLDivElement>(null)
@@ -179,10 +180,10 @@ export default function ApproachSection() {
           }}
         >
           {/* Three Column Layout: Left Box | Chat Window | Right Box */}
-          <div className="relative flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 xl:gap-16 2xl:gap-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             
             {/* Left Floating Box - Hidden on mobile, visible on lg+ */}
-            <div className="hidden lg:block w-full max-w-[300px] xl:max-w-[350px] 2xl:max-w-[400px]">
+            <div className="hidden lg:block w-full max-w-[280px] xl:max-w-[320px] 2xl:max-w-[360px]">
               <FloatingInfoBox
                 position="left"
                 title="Strategic Growth"
@@ -201,8 +202,8 @@ export default function ApproachSection() {
               />
             </div>
 
-            {/* Center Chat Window */}
-            <div className="relative w-full max-w-[380px] sm:max-w-[440px] md:max-w-[520px] lg:max-w-[640px] xl:max-w-[720px] 2xl:max-w-[800px] z-50">
+            {/* Center Chat Window - Always centered */}
+            <div className="relative w-full max-w-[380px] sm:max-w-[440px] md:max-w-[520px] lg:max-w-[640px] xl:max-w-[720px] 2xl:max-w-[800px] z-50 mx-auto">
             <div className="rounded-2xl sm:rounded-3xl bg-white shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25),0_0_0_1px_rgba(255,255,255,0.1)_inset] border border-white/20 overflow-hidden">
               {/* macOS Window Header - Responsive spacing */}
               <div className="bg-gradient-to-b from-gray-50 to-gray-100 px-3 sm:px-4 md:px-5 lg:px-6 py-2.5 sm:py-3 md:py-4 lg:py-5 border-b border-gray-200/50 flex items-center justify-between">
@@ -290,7 +291,7 @@ export default function ApproachSection() {
             </div>
 
             {/* Right Floating Box - Hidden on mobile, visible on lg+ */}
-            <div className="hidden lg:block w-full max-w-[300px] xl:max-w-[350px] 2xl:max-w-[400px]">
+            <div className="hidden lg:block w-full max-w-[280px] xl:max-w-[320px] 2xl:max-w-[360px]">
               <FloatingInfoBox
                 position="right"
                 title="Technical Excellence"
@@ -307,6 +308,12 @@ export default function ApproachSection() {
                 }}
                 accentColor="blue"
               />
+            </div>
+
+            {/* Electric Circuit Connections - Desktop Only */}
+            <div className="hidden lg:block absolute inset-0 pointer-events-none">
+              <ElectricCircuitConnector from="left" to="center" />
+              <ElectricCircuitConnector from="right" to="center" />
             </div>
 
             {/* Mobile Floating Boxes - Stack above chat window on mobile */}
