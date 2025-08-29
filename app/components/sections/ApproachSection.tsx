@@ -180,14 +180,14 @@ export default function ApproachSection() {
           }}
         >
           {/* Three Column Layout: Left Box | Chat Window | Right Box */}
-          <div className="relative flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 gap-6 lg:gap-8 xl:gap-12">
             
-            {/* Left Floating Box - Hidden on mobile, visible on lg+ */}
-            <div className="hidden lg:block w-full max-w-[280px] xl:max-w-[320px] 2xl:max-w-[360px]">
+            {/* Left Floating Box - Visible on all breakpoints */}
+            <div className="w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[320px] xl:max-w-[360px] 2xl:max-w-[400px] order-1 lg:order-1">
               <FloatingInfoBox
                 position="left"
                 title="Strategic Growth"
-                description="Data-driven approach that transforms websites into conversion machines. We don't just build, we optimize for results."
+                description="Data-driven approach that transforms websites into conversion machines. We don't just build, we optimise for results."
                 icon={
                   <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
@@ -203,7 +203,7 @@ export default function ApproachSection() {
             </div>
 
             {/* Center Chat Window - Always centered */}
-            <div className="relative w-full max-w-[380px] sm:max-w-[440px] md:max-w-[520px] lg:max-w-[640px] xl:max-w-[720px] 2xl:max-w-[800px] z-50 mx-auto">
+            <div className="relative w-full max-w-[380px] sm:max-w-[440px] md:max-w-[520px] lg:max-w-[640px] xl:max-w-[720px] 2xl:max-w-[800px] z-50 mx-auto order-2 lg:order-2">
             <div className="rounded-2xl sm:rounded-3xl bg-white shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25),0_0_0_1px_rgba(255,255,255,0.1)_inset] border border-white/20 overflow-hidden">
               {/* macOS Window Header - Responsive spacing */}
               <div className="bg-gradient-to-b from-gray-50 to-gray-100 px-3 sm:px-4 md:px-5 lg:px-6 py-2.5 sm:py-3 md:py-4 lg:py-5 border-b border-gray-200/50 flex items-center justify-between">
@@ -290,70 +290,35 @@ export default function ApproachSection() {
               </div>
             </div>
 
-            {/* Right Floating Box - Hidden on mobile, visible on lg+ */}
-            <div className="hidden lg:block w-full max-w-[280px] xl:max-w-[320px] 2xl:max-w-[360px]">
+            {/* Right Floating Box - Visible on all breakpoints */}
+            <div className="w-full max-w-[320px] sm:max-w-[360px] md:max-w-[400px] lg:max-w-[320px] xl:max-w-[360px] 2xl:max-w-[400px] order-3 lg:order-3">
               <FloatingInfoBox
                 position="right"
                 title="Technical Excellence"
-                description="Cutting-edge development with performance optimization. Your website will be fast, secure, and future-ready."
+                description="Cutting-edge development with performance optimisation. Your website will be fast, secure, and future-ready."
                 icon={
                   <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
                   </svg>
                 }
                 gradientColors={{
-                  from: "from-blue-500",
-                  via: "via-purple-600",
-                  to: "to-indigo-700"
+                  from: "from-blue-400",
+                  via: "via-purple-500",
+                  to: "to-indigo-600"
                 }}
                 accentColor="blue"
               />
             </div>
+          </div>
 
-            {/* Electric Circuit Connections - Desktop Only */}
-            <div className="hidden lg:block absolute inset-0 pointer-events-none">
-              <ElectricCircuitConnector from="left" to="center" />
-              <ElectricCircuitConnector from="right" to="center" />
-            </div>
-
-            {/* Mobile Floating Boxes - Stack above chat window on mobile */}
-            <div className="lg:hidden w-full max-w-[300px] mb-8">
-              <FloatingInfoBox
-                position="left"
-                title="Strategic Growth"
-                description="Data-driven approach that transforms websites into conversion machines. We don't just build, we optimize for results."
-                icon={
-                  <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                  </svg>
-                }
-                gradientColors={{
-                  from: "from-yellow-400",
-                  via: "via-orange-500", 
-                  to: "to-pink-600"
-                }}
-                accentColor="yellow"
-              />
-            </div>
-
-            <div className="lg:hidden w-full max-w-[300px] mt-8">
-              <FloatingInfoBox
-                position="right"
-                title="Technical Excellence"
-                description="Cutting-edge development with performance optimization. Your website will be fast, secure, and future-ready."
-                icon={
-                  <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                }
-                gradientColors={{
-                  from: "from-blue-500",
-                  via: "via-purple-600",
-                  to: "to-indigo-700"
-                }}
-                accentColor="blue"
-              />
-            </div>
+          {/* Electric Circuit Connections - Desktop Only */}
+          <div className="hidden lg:block absolute inset-0 pointer-events-none">
+            {/* Left to Center Connection */}
+            <ElectricCircuitConnector from="left" to="center" />
+            {/* Right to Center Connection */}
+            <ElectricCircuitConnector from="right" to="center" />
           </div>
         </div>
 
