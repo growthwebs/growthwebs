@@ -124,28 +124,28 @@ export default function FloatingInfoBox({
       <div className="absolute inset-0 rounded-3xl overflow-hidden">
         {/* Primary Aurora Stream - Complex Wave */}
         <div 
-          className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-blue-500/30 to-transparent"
+          className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-blue-500/80 to-transparent"
           style={{
             transform: `skewY(${Math.sin(auroraPhase * Math.PI / 180) * 15}deg) scaleY(${1.2 + Math.sin(auroraPhase * Math.PI / 90) * 0.3})`,
-            opacity: 0.7 + Math.sin(auroraPhase * Math.PI / 180) * 0.3
+            opacity: 0.9 + Math.sin(auroraPhase * Math.PI / 180) * 0.1
           }}
         ></div>
         
         {/* Secondary Aurora - Diagonal Wave */}
         <div 
-          className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent via-blue-500/25 to-transparent"
+          className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-transparent via-blue-500/70 to-transparent"
           style={{
             transform: `rotate(${auroraPhase}deg) scale(${1.1 + Math.sin(auroraPhase * Math.PI / 120) * 0.2})`,
-            opacity: 0.6 + Math.sin(auroraPhase * Math.PI / 180) * 0.4
+            opacity: 0.8 + Math.sin(auroraPhase * Math.PI / 180) * 0.2
           }}
         ></div>
         
         {/* Tertiary Aurora - Spiral Effect */}
         <div 
-          className="absolute top-1/2 left-1/2 w-full h-full bg-gradient-to-r from-transparent via-blue-500/20 to-transparent"
+          className="absolute top-1/2 left-1/2 w-full h-full bg-gradient-to-r from-transparent via-blue-500/60 to-transparent"
           style={{
             transform: `rotate(${auroraPhase * 2}deg) scale(${0.8 + Math.sin(auroraPhase * Math.PI / 60) * 0.4})`,
-            opacity: 0.5 + Math.sin(auroraPhase * Math.PI / 90) * 0.3
+            opacity: 0.7 + Math.sin(auroraPhase * Math.PI / 90) * 0.3
           }}
         ></div>
       </div>
