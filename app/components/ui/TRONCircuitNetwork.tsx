@@ -157,30 +157,30 @@ export default function TRONCircuitNetwork({ className = '' }: TRONCircuitNetwor
     const animate = () => {
       animationIdRef.current = requestAnimationFrame(animate)
 
-      // Rotate the entire network
-      circuitNetwork.rotation.y += 0.002
-      circuitNetwork.rotation.x += 0.001
+      // Rotate the entire network - More subtle rotation
+      circuitNetwork.rotation.y += 0.001  // Reduced from 0.002
+      circuitNetwork.rotation.x += 0.0005  // Reduced from 0.001
 
-      // Animate energy particles
+      // Animate energy particles - More subtle movement
       circuitNetwork.children.forEach((child, index) => {
         if (index >= 6) { // Skip circuit lines and nodes, only animate particles
-          child.rotation.y += 0.01
-          child.position.y += Math.sin(Date.now() * 0.001 + index) * 0.001
+          child.rotation.y += 0.005  // Reduced from 0.01
+          child.position.y += Math.sin(Date.now() * 0.001 + index) * 0.0005  // Reduced from 0.001
         }
       })
 
-      // Pulse energy fields
+      // Pulse energy fields - More subtle pulsing
       circuitNetwork.children.forEach((child, index) => {
         if (index >= 3 && index < 6) { // Energy fields
-          const scale = 1 + Math.sin(Date.now() * 0.003 + index) * 0.2
+          const scale = 1 + Math.sin(Date.now() * 0.003 + index) * 0.1  // Reduced from 0.2
           child.scale.setScalar(scale)
         }
       })
 
-      // Add hover effect
+      // Add hover effect - More subtle hover response
       if (isHovered) {
-        circuitNetwork.rotation.y += 0.005
-        circuitNetwork.rotation.x += 0.003
+        circuitNetwork.rotation.y += 0.002  // Reduced from 0.005
+        circuitNetwork.rotation.x += 0.001  // Reduced from 0.003
       }
 
       renderer.render(scene, camera)
