@@ -132,7 +132,7 @@ export default function EnhancedFeatureCard({
                 {[...Array(3)].map((_, i) => (
                   <div
                     key={i}
-                    className={`absolute w-1 h-1 bg-white rounded-full opacity-60 animate-pulse`}
+                    className="absolute w-1 h-1 bg-white rounded-full opacity-60 animate-pulse"
                     style={{
                       top: `${20 + i * 20}%`,
                       left: `${20 + i * 20}%`,
@@ -151,7 +151,7 @@ export default function EnhancedFeatureCard({
           {/* Enhanced Content */}
           <div className="relative z-10">
             {/* Title with Glow Effect */}
-            <h3 className={`text-xl sm:text-2xl font-semibold text-white mb-4 group-hover:text-${accentColor} transition-all duration-500 group-hover:mb-6`}>
+            <h3 className="text-xl sm:text-2xl font-semibold text-white mb-4 group-hover:mb-6 transition-all duration-500">
               {title}
               <div className={`absolute inset-0 bg-gradient-to-r ${gradientFrom} ${gradientTo} blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
             </h3>
@@ -165,16 +165,16 @@ export default function EnhancedFeatureCard({
           {/* Interactive Energy Lines */}
           <div className="absolute inset-0 overflow-hidden rounded-3xl">
             {/* Top Energy Line */}
-            <div className={`absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-${accentColor}/30 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left`} />
+            <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/30 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-left" />
             
             {/* Right Energy Line */}
-            <div className={`absolute top-0 right-0 w-px h-full bg-gradient-to-b from-transparent via-${accentColor}/30 to-transparent transform scale-y-0 group-hover:scale-y-100 transition-transform duration-1000 origin-top`} />
+            <div className="absolute top-0 right-0 w-px h-full bg-gradient-to-b from-transparent via-white/30 to-transparent transform scale-y-0 group-hover:scale-y-100 transition-transform duration-1000 origin-top" />
             
             {/* Bottom Energy Line */}
-            <div className={`absolute bottom-0 right-0 w-full h-px bg-gradient-to-l from-transparent via-${accentColor}/30 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-right`} />
+            <div className="absolute bottom-0 right-0 w-full h-px bg-gradient-to-l from-transparent via-white/30 to-transparent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-1000 origin-right" />
             
             {/* Left Energy Line */}
-            <div className={`absolute bottom-0 left-0 w-px h-full bg-gradient-to-t from-transparent via-${accentColor}/30 to-transparent transform scale-y-0 group-hover:scale-y-100 transition-transform duration-1000 origin-bottom`} />
+            <div className="absolute bottom-0 left-0 w-px h-full bg-gradient-to-t from-transparent via-white/30 to-transparent transform scale-y-0 group-hover:scale-y-100 transition-transform duration-1000 origin-bottom" />
           </div>
 
           {/* Corner Accents */}
