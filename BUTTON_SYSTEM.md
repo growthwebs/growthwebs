@@ -191,7 +191,7 @@ import Button from '../ui/Button'
 ## 📱 Responsive Design
 
 ### **Breakpoint Adaptations**
-- **Mobile**: Optimized touch targets
+- **Mobile**: Optimised touch targets
 - **Tablet**: Balanced proportions
 - **Desktop**: Full hover effects
 
@@ -267,11 +267,11 @@ This showcases:
 - Dropdown integration
 - Animation variants
 
-### **Performance Optimizations**
-- CSS-in-JS optimization
+### **Performance Optimisations**
+- CSS-in-JS optimisation
 - Bundle size reduction
 - Animation performance
-- Touch event optimization
+- Touch event optimisation
 
 ---
 

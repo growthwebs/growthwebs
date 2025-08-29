@@ -119,12 +119,12 @@ export default function HeroSection() {
         {/* Enhanced Subtitle with Comprehensive SEO Keywords */}
         <p className="text-sm xs:text-base sm:text-lg md:text-lg lg:text-xl xl:text-2xl text-gray-300 mb-6 xs:mb-8 sm:mb-10 md:mb-12 lg:mb-14 max-w-[280px] xs:max-w-2xl sm:max-w-3xl mx-auto leading-relaxed">
           Expert web design, development & strategic SEO. 
-          Conversion optimization & high-performance websites that drive growth.
+          Conversion optimisation & high-performance websites that drive growth.
         </p>
         
 
         
-        {/* Enhanced CTA Button - SEO Optimized */}
+        {/* Enhanced CTA Button - SEO Optimised */}
         <div className="flex justify-center mb-6 xs:mb-8 sm:mb-10 md:mb-12">
           <Button 
             href="#start" 

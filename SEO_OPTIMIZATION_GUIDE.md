@@ -1,21 +1,21 @@
-# SEO Optimization Guide - GrowthWebs Agency
+# SEO Optimisation Guide - GrowthWebs Agency
 
 ## Overview
-This document outlines the comprehensive SEO improvements implemented for GrowthWebs Agency, including best practices, keyword strategies, and technical optimizations.
+This document outlines the comprehensive SEO improvements implemented for GrowthWebs Agency, including best practices, keyword strategies, and technical optimisations.
 
 ## 🎯 Primary Keywords & Phrases
 
 ### Core Business Keywords
-- **Primary**: "web development agency", "growth marketing", "conversion optimization"
+- **Primary**: "web development agency", "growth marketing", "conversion optimisation"
 - **Secondary**: "website design", "digital marketing", "SEO services"
 - **Geographic**: "London web agency", "UK web development"
-- **Service-specific**: "e-commerce development", "custom web applications", "performance optimization"
+- **Service-specific**: "e-commerce development", "custom web applications", "performance optimisation"
 
 ### Long-tail Keywords
 - "high-converting website design London"
 - "growth marketing agency UK"
 - "web development for business growth"
-- "conversion optimization services"
+- "conversion optimisation services"
 - "performance-focused web development"
 
 ## 📱 Meta Tags & SEO Elements
@@ -23,7 +23,7 @@ This document outlines the comprehensive SEO improvements implemented for Growth
 ### Main Page (Home)
 ```typescript
 title: "GrowthWebs Agency - Premium Web Development & Growth Marketing | London"
-description: "Transform your business with GrowthWebs. We build high-converting websites, implement growth marketing strategies, and create digital experiences that drive results. Expert web development, SEO, and conversion optimization."
+description: "Transform your business with GrowthWebs. We build high-converting websites, implement growth marketing strategies, and create digital experiences that drive results. Expert web development, SEO, and conversion optimisation."
 ```
 
 ### Privacy Policy
@@ -58,7 +58,7 @@ description: "Learn about GrowthWebs Agency cookie policy. Understand how we use
 
 ### 3. Meta Tags Structure
 - Comprehensive Open Graph tags for social sharing
-- Twitter Card optimization
+- Twitter Card optimisation
 - Proper robots meta tags
 - Canonical URLs for all pages
 
@@ -68,7 +68,7 @@ description: "Learn about GrowthWebs Agency cookie policy. Understand how we use
 - Internal linking structure
 - Mobile-first responsive design
 
-## 📊 Content Optimization
+## 📊 Content Optimisation
 
 ### Hero Section Improvements
 - **Before**: "A website that works as hard as you do"
@@ -111,12 +111,12 @@ description: "Learn about GrowthWebs Agency cookie policy. Understand how we use
 
 ### Technical Maintenance
 - Regular performance audits
-- Mobile optimization checks
+- Mobile optimisation checks
 - Page speed monitoring
-- Core Web Vitals optimization
+- Core Web Vitals optimisation
 
 ### Local SEO
-- Google My Business optimization
+- Google My Business optimisation
 - Local keyword targeting
 - Customer review management
 - Location-based content
@@ -135,23 +135,23 @@ description: "Learn about GrowthWebs Agency cookie policy. Understand how we use
 2. **Service**: "web development", "growth marketing"
 3. **Geographic**: "London", "UK", "England"
 4. **Problem**: "website not converting", "poor performance"
-5. **Solution**: "conversion optimization", "performance optimization"
+5. **Solution**: "conversion optimisation", "performance optimisation"
 
-## 📱 Mobile Optimization
+## 📱 Mobile Optimisation
 
 ### Responsive Design
 - Mobile-first approach
 - Touch-friendly interfaces
 - Fast loading times
-- Optimized images
+- Optimised images
 
 ### Mobile SEO
 - Mobile-friendly test passing
 - Accelerated Mobile Pages (AMP) consideration
 - Mobile-specific keywords
-- Local mobile search optimization
+- Local mobile search optimisation
 
-## 🚀 Performance Optimization
+## 🚀 Performance Optimisation
 
 ### Core Web Vitals
 - **Largest Contentful Paint (LCP)**: < 2.5s
@@ -159,7 +159,7 @@ description: "Learn about GrowthWebs Agency cookie policy. Understand how we use
 - **Cumulative Layout Shift (CLS)**: < 0.1
 
 ### Technical Improvements
-- Image optimization
+- Image optimisation
 - CSS/JS minification
 - CDN implementation
 - Browser caching
@@ -210,10 +210,10 @@ description: "Learn about GrowthWebs Agency cookie policy. Understand how we use
 - Natural keyword integration
 - Proper heading structure
 - Internal linking
-- Meta description optimization
+- Meta description optimisation
 - Image alt text
 
-## 🎯 Conversion Optimization
+## 🎯 Conversion Optimisation
 
 ### CTA Strategy
 - Primary: "Start Your Growth Journey"
@@ -229,14 +229,14 @@ description: "Learn about GrowthWebs Agency cookie policy. Understand how we use
 
 ## 📱 Social Media Integration
 
-### Open Graph Optimization
+### Open Graph Optimisation
 - Compelling titles
 - Descriptive descriptions
 - High-quality images
 - Proper URL structure
 
 ### Social Sharing
-- Twitter Card optimization
+- Twitter Card optimisation
 - LinkedIn sharing
 - Facebook Open Graph
 - Pinterest Rich Pins

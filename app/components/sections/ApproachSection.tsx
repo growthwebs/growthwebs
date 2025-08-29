@@ -145,7 +145,7 @@ export default function ApproachSection() {
         <div className="absolute bottom-1/8 right-1/8 w-1 h-1 bg-andromeda/20 rounded-full animate-ping" style={{animationDelay: '19s'}}></div>
       </div>
       
-              {/* Content Section with SEO-Optimized Headings */}
+              {/* Content Section with SEO-Optimised Headings */}
         <div className="relative z-10 pt-16 xs:pt-18 sm:pt-20 pb-12 xs:pb-14 sm:pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto text-center mb-8 xs:mb-10 sm:mb-12 md:mb-14 lg:mb-16 px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-white mb-4 xs:mb-6 sm:mb-8 leading-tight">
@@ -156,7 +156,7 @@ export default function ApproachSection() {
           </h2>
           <p className="text-base xs:text-lg sm:text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed mb-6 xs:mb-8 sm:mb-10 md:mb-12">
             We don't just build websites – we create digital growth engines that drive measurable business results. 
-            Our proven methodology combines strategic thinking, technical excellence, and data-driven optimization.
+            Our proven methodology combines strategic thinking, technical excellence, and data-driven optimisation.
           </p>
 
 

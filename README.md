@@ -143,7 +143,7 @@ The website is fully responsive with:
 - Mobile-first approach
 - Breakpoint-specific layouts
 - Touch-friendly interactions
-- Optimized for all screen sizes
+- Optimised for all screen sizes
 
 ## 🚀 Deployment
 
@@ -168,7 +168,7 @@ npm start
 
 ### Performance
 - Lazy loading for components
-- Optimized Three.js rendering
+- Optimised Three.js rendering
 - Efficient GSAP animations
 - Minimal bundle size
 

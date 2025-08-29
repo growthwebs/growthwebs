@@ -151,10 +151,10 @@ export default function FeaturedWorkSection() {
               Strategic SEO
             </span>
             <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
-              Conversion Optimization
+              Conversion Optimisation
             </span>
             <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
-              Performance Optimization
+              Performance Optimisation
             </span>
             <span className="px-4 py-2.5 bg-white/10 backdrop-blur-md rounded-2xl border border-white/20 shadow-lg shadow-black/20 hover:bg-white/15 hover:border-cosmic/40 hover:shadow-cosmic/20 transition-all duration-300">
               UX/UI Design
