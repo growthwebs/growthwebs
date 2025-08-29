@@ -26,18 +26,18 @@ export default function EnhancedFeatureCard({
   const [isInView, setIsInView] = useState(false)
   const cardRef = useRef<HTMLDivElement>(null)
   
-  // 3D motion values - More subtle ranges
+  // 3D motion values - Match chat window subtlety exactly
   const x = useMotionValue(0)
   const y = useMotionValue(0)
-  const rotateX = useTransform(y, [-100, 100], [8, -8])  // Reduced from 30 to 8 degrees
-  const rotateY = useTransform(x, [-100, 100], [-8, 8])  // Reduced from 30 to 8 degrees
+  const rotateX = useTransform(y, [-100, 100], [3, -3])  // Ultra-subtle: reduced from 8 to 3 degrees
+  const rotateY = useTransform(x, [-100, 100], [-3, 3])  // Ultra-subtle: reduced from 8 to 3 degrees
   
-  // Spring animations - More subtle hover effects
-  const springConfig = { damping: 25, stiffness: 400 }  // Increased damping for smoother motion
+  // Spring animations - Match chat window smoothness
+  const springConfig = { damping: 30, stiffness: 500 }  // Even smoother motion like chat window
   const springRotateX = useSpring(rotateX, springConfig)
   const springRotateY = useSpring(rotateY, springConfig)
-  const springScale = useSpring(isHovered ? 1.02 : 1, springConfig)  // Reduced from 1.05 to 1.02
-  const springZ = useSpring(isHovered ? 8 : 0, springConfig)  // Reduced from 20 to 8
+  const springScale = useSpring(isHovered ? 1.01 : 1, springConfig)  // Ultra-subtle: reduced from 1.02 to 1.01
+  const springZ = useSpring(isHovered ? 4 : 0, springConfig)  // Ultra-subtle: reduced from 8 to 4
 
   // Intersection observer for entrance animation
   useEffect(() => {
@@ -107,9 +107,9 @@ export default function EnhancedFeatureCard({
         <div className="relative h-full bg-gradient-to-br from-white/5 via-white/8 to-white/3 backdrop-blur-2xl border border-white/20 rounded-3xl p-6 sm:p-8 overflow-hidden group-hover:border-white/40 transition-all duration-700">
           
           {/* Animated Background Pattern */}
-          <div className="absolute inset-0 opacity-20 group-hover:opacity-30 transition-opacity duration-700">
-            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent transform rotate-45 scale-150 group-hover:scale-175 transition-transform duration-1000" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:20px_20px] group-hover:bg-[length:18px_18px] transition-all duration-1000" />
+          <div className="absolute inset-0 opacity-20 group-hover:opacity-25 transition-opacity duration-700">
+            <div className="absolute inset-0 bg-gradient-to-br from-transparent via-white/5 to-transparent transform rotate-45 scale-150 group-hover:scale-160 transition-transform duration-1000" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[length:20px_20px] group-hover:bg-[length:19px_19px] transition-all duration-1000" />
           </div>
 
           {/* Glowing Border Effect */}
@@ -118,7 +118,7 @@ export default function EnhancedFeatureCard({
           {/* Enhanced Icon Container */}
           <div className="relative mb-6 group-hover:mb-8 transition-all duration-500">
             {/* Icon Background with 3D Effect */}
-            <div className={`relative w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br ${gradientFrom} ${gradientTo} rounded-2xl border border-white/20 flex items-center justify-center group-hover:scale-105 group-hover:rotate-1 transition-all duration-500 shadow-lg group-hover:shadow-2xl`}>
+            <div className={`relative w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br ${gradientFrom} ${gradientTo} rounded-2xl border border-white/20 flex items-center justify-center group-hover:scale-102 group-hover:rotate-0.5 transition-all duration-500 shadow-lg group-hover:shadow-xl`}>
               {/* Icon Glow */}
               <div className={`absolute inset-0 bg-gradient-to-br ${gradientFrom} ${gradientTo} rounded-2xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-500`} />
               
