@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import Image from 'next/image'
+import FloatingInfoBox from '@/app/components/ui/FloatingInfoBox'
 
 export default function ApproachSection() {
   const sceneRef = useRef<HTMLDivElement>(null)
@@ -13,32 +14,38 @@ export default function ApproachSection() {
   const conversation = [
     {
       id: 1,
-      sender: 'ai',
-      text: "Hello! I've been looking at your website situation. It's a common challenge.",
-      avatar: 'AI'
+      sender: 'user',
+      text: "I need a re-design... my website is killing my business 😩",
+      avatar: 'U'
     },
     {
       id: 2,
-      sender: 'user',
-      text: "Yeah, we're struggling. Our site looks good but doesn't help us grow.",
-      avatar: 'U'
-    },
-    {
-      id: 3,
       sender: 'ai',
-      text: "That's the classic 'digital business card' problem. Beautiful design, zero impact.",
+      text: "You've landed in exactly the right place. Let's turn that around.",
       avatar: 'AI'
     },
     {
-      id: 4,
+      id: 3,
       sender: 'user',
-      text: "Exactly! How do we fix this? We need something that actually works.",
+      text: "I need a new website that actually converts visitors!",
       avatar: 'U'
     },
     {
-      id: 5,
+      id: 4,
       sender: 'ai',
-      text: "A website should be your best salesperson, working 24/7. Let me show you how.",
+      text: "That's what we do best. Growth-focused websites that work 24/7.",
+      avatar: 'AI'
+    },
+    {
+      id: 5,
+      sender: 'user',
+      text: "I need SEO help too... I'm invisible on Google 😭",
+      avatar: 'U'
+    },
+    {
+      id: 6,
+      sender: 'ai',
+      text: "We'll make you impossible to miss. Strategic SEO that drives real traffic.",
       avatar: 'AI'
     }
   ]
@@ -171,8 +178,31 @@ export default function ApproachSection() {
             transition: 'transform 0.1s ease-out'
           }}
         >
-          {/* Floating Chat Card - Complete Responsive Design with Scrolling */}
-          <div className="relative mx-auto w-full max-w-[380px] sm:max-w-[440px] md:max-w-[520px] lg:max-w-[640px] xl:max-w-[720px] 2xl:max-w-[800px] z-50">
+          {/* Three Column Layout: Left Box | Chat Window | Right Box */}
+          <div className="relative flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-12 xl:gap-16 2xl:gap-20 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            {/* Left Floating Box - Hidden on mobile, visible on lg+ */}
+            <div className="hidden lg:block w-full max-w-[300px] xl:max-w-[350px] 2xl:max-w-[400px]">
+              <FloatingInfoBox
+                position="left"
+                title="Strategic Growth"
+                description="Data-driven approach that transforms websites into conversion machines. We don't just build, we optimize for results."
+                icon={
+                  <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                }
+                gradientColors={{
+                  from: "from-yellow-400",
+                  via: "via-orange-500", 
+                  to: "to-pink-600"
+                }}
+                accentColor="yellow"
+              />
+            </div>
+
+            {/* Center Chat Window */}
+            <div className="relative w-full max-w-[380px] sm:max-w-[440px] md:max-w-[520px] lg:max-w-[640px] xl:max-w-[720px] 2xl:max-w-[800px] z-50">
             <div className="rounded-2xl sm:rounded-3xl bg-white shadow-[0_25px_50px_-12px_rgba(0,0,0,0.25),0_0_0_1px_rgba(255,255,255,0.1)_inset] border border-white/20 overflow-hidden">
               {/* macOS Window Header - Responsive spacing */}
               <div className="bg-gradient-to-b from-gray-50 to-gray-100 px-3 sm:px-4 md:px-5 lg:px-6 py-2.5 sm:py-3 md:py-4 lg:py-5 border-b border-gray-200/50 flex items-center justify-between">
@@ -217,7 +247,7 @@ export default function ApproachSection() {
                         ? 'bg-gradient-to-r from-cosmic to-andromeda text-white' 
                         : 'bg-gray-100 text-gray-700'
                     }`}>
-                      <p className="text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed">{message.text}</p>
+                      <p className="text-xs sm:text-sm md:text-base lg:text-lg leading-relaxed">{message.text}</p>
                     </div>
                     
                     {message.sender === 'user' && (
@@ -258,7 +288,67 @@ export default function ApproachSection() {
                 )}
               </div>
             </div>
+
+            {/* Right Floating Box - Hidden on mobile, visible on lg+ */}
+            <div className="hidden lg:block w-full max-w-[300px] xl:max-w-[350px] 2xl:max-w-[400px]">
+              <FloatingInfoBox
+                position="right"
+                title="Technical Excellence"
+                description="Cutting-edge development with performance optimization. Your website will be fast, secure, and future-ready."
+                icon={
+                  <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                }
+                gradientColors={{
+                  from: "from-blue-500",
+                  via: "via-purple-600",
+                  to: "to-indigo-700"
+                }}
+                accentColor="blue"
+              />
+            </div>
+
+            {/* Mobile Floating Boxes - Stack above chat window on mobile */}
+            <div className="lg:hidden w-full max-w-[300px] mb-8">
+              <FloatingInfoBox
+                position="left"
+                title="Strategic Growth"
+                description="Data-driven approach that transforms websites into conversion machines. We don't just build, we optimize for results."
+                icon={
+                  <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                }
+                gradientColors={{
+                  from: "from-yellow-400",
+                  via: "via-orange-500", 
+                  to: "to-pink-600"
+                }}
+                accentColor="yellow"
+              />
+            </div>
+
+            <div className="lg:hidden w-full max-w-[300px] mt-8">
+              <FloatingInfoBox
+                position="right"
+                title="Technical Excellence"
+                description="Cutting-edge development with performance optimization. Your website will be fast, secure, and future-ready."
+                icon={
+                  <svg className="w-8 h-8 sm:w-10 sm:h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                }
+                gradientColors={{
+                  from: "from-blue-500",
+                  via: "via-purple-600",
+                  to: "to-indigo-700"
+                }}
+                accentColor="blue"
+              />
+            </div>
           </div>
+        </div>
 
           {/* Floating Data Panels - Better spacing and positioning */}
           <div className="absolute top-1/4 -left-12 sm:-left-16 md:-left-20 lg:-left-24 xl:-left-28 w-28 h-20 sm:w-36 sm:h-24 md:w-44 md:h-28 lg:w-52 lg:h-36 xl:w-60 xl:h-40 bg-gradient-to-br from-cosmic/10 via-andromeda/8 to-orion/6 rounded-xl sm:rounded-2xl backdrop-blur-xl border border-cosmic/20 animate-float-slow opacity-60"></div>
