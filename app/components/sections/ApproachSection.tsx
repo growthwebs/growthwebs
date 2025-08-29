@@ -321,11 +321,10 @@ export default function ApproachSection() {
           </div>
         </div>
 
-          {/* Floating Data Panels - Better spacing and positioning */}
-          <div className="absolute top-1/4 -left-12 sm:-left-16 md:-left-20 lg:-left-24 xl:-left-28 w-28 h-20 sm:w-36 sm:h-24 md:w-44 md:h-28 lg:w-52 lg:h-36 xl:w-60 xl:h-40 bg-gradient-to-br from-cosmic/10 via-andromeda/8 to-orion/6 rounded-xl sm:rounded-2xl backdrop-blur-xl border border-cosmic/20 animate-float-slow opacity-60"></div>
-          <div className="absolute top-1/2 -right-8 sm:-right-12 md:-left-16 lg:-left-20 xl:-left-24 w-24 h-16 sm:w-32 sm:h-20 md:w-36 md:h-24 lg:w-44 lg:h-28 xl:w-52 xl:h-32 bg-gradient-to-br from-andromeda/10 via-orion/8 to-cosmic/6 rounded-xl sm:rounded-2xl backdrop-blur-xl border border-andromeda/20 animate-float-slow opacity-50" style={{animationDelay: '3s'}}></div>
-          <div className="absolute bottom-1/4 left-1/3 sm:left-1/2 w-20 h-16 sm:w-24 sm:h-20 md:w-32 md:h-24 lg:w-40 lg:h-28 xl:w-48 xl:h-36 bg-gradient-to-tr from-orion/10 via-cosmic/8 to-andromeda/6 rounded-xl sm:rounded-2xl backdrop-blur-xl border border-orion/20 animate-float-slow opacity-45" style={{animationDelay: '6s'}}></div>
-        </div>
+        {/* Floating Data Panels - Better spacing and positioning */}
+        <div className="absolute top-1/4 -left-12 sm:-left-16 md:-left-20 lg:-left-24 xl:-left-28 w-28 h-20 sm:w-36 sm:h-24 md:w-44 md:h-28 lg:w-52 lg:h-36 xl:w-60 xl:h-40 bg-gradient-to-br from-cosmic/10 via-andromeda/8 to-orion/6 rounded-xl sm:rounded-2xl backdrop-blur-xl border border-cosmic/20 animate-float-slow opacity-60"></div>
+        <div className="absolute top-1/2 -right-8 sm:-right-12 md:-left-16 lg:-left-20 xl:-left-24 w-24 h-16 sm:w-32 sm:h-20 md:w-36 md:h-24 lg:w-44 lg:h-28 xl:w-52 xl:h-32 bg-gradient-to-br from-andromeda/10 via-orion/8 to-cosmic/6 rounded-xl sm:rounded-2xl backdrop-blur-xl border border-andromeda/20 animate-float-slow opacity-50" style={{animationDelay: '3s'}}></div>
+        <div className="absolute bottom-1/4 left-1/3 sm:left-1/2 w-20 h-16 sm:w-24 sm:h-20 md:w-32 md:h-24 lg:w-40 lg:h-28 xl:w-48 xl:h-36 bg-gradient-to-tr from-orion/10 via-cosmic/8 to-andromeda/6 rounded-xl sm:rounded-2xl backdrop-blur-xl border border-orion/20 animate-float-slow opacity-45" style={{animationDelay: '6s'}}></div>
       </div>
     </section>
   )
