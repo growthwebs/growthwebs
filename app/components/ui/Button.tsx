@@ -46,6 +46,10 @@ interface ButtonProps {
   disabled?: boolean
   /** Button type for form submissions */
   type?: 'button' | 'submit' | 'reset'
+  /** Target attribute for links */
+  target?: string
+  /** Rel attribute for links */
+  rel?: string
 }
 
 const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(({
@@ -92,6 +96,8 @@ const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonProps>(({
         href={href}
         className={classes}
         ref={ref as React.Ref<HTMLAnchorElement>}
+        target={props.target}
+        rel={props.rel}
         {...props}
       >
         {children}

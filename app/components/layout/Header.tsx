@@ -53,9 +53,12 @@ export default function Header() {
             {/* CTA Button - Hidden on mobile */}
             <div className="hidden md:flex items-center space-x-4">
               <Button 
+                href="https://cal.com/marino-pernia/30min"
                 variant="header" 
                 size="md" 
                 className="px-4 sm:px-5 py-2 sm:py-2.5 text-sm"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Start now
               </Button>
@@ -211,9 +214,12 @@ export default function Header() {
               {/* Mobile CTA Button */}
               <div className="pt-4 border-t border-white/10">
                 <Button 
+                  href="https://cal.com/marino-pernia/30min"
                   variant="header" 
                   size="md" 
                   className="w-full px-6 py-3 text-base"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   onClick={closeMobileMenu}
                 >
                   Start now

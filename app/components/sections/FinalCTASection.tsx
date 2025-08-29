@@ -79,9 +79,11 @@ export default function FinalCTASection() {
           {/* CTA Buttons - Matching Hero Section Size */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-10 sm:mb-12">
             <Button 
-              href="#schedule" 
+              href="https://cal.com/marino-pernia/30min" 
               variant="primary" 
               size="lg"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Schedule a call
             </Button>
